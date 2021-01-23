@@ -134,7 +134,7 @@ if (isset($_GET["mid"]))
 	$delete = $_GET["mid"];
 
 	mysqli_query($conn, "DELETE from productlist where s_id = '$delete' ");
-	echo "haha123";
+	echo "haha123 new brach 'backup'";
 	header("location:ProductDetails3.php");
 }
 
