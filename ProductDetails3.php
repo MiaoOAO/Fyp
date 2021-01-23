@@ -134,7 +134,6 @@ if (isset($_GET["mid"]))
 	$delete = $_GET["mid"];
 
 	mysqli_query($conn, "DELETE from productlist where s_id = '$delete' ");
-	echo "haha123 test update";
 	header("location:ProductDetails3.php");
 }
 
