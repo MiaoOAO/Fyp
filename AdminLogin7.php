@@ -4,18 +4,32 @@ session_start(); ?>
 
 <html>
 <head>
-
-<title>Login in to Admin Page</title>
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "stylesheet" href="AdminLogin.css">
 </head>
+
+
 
 	<body>
     <h2>Admin Login</h2>
-		<form action="AdminLogin7.php" method="post">
- 			User name:<input type="text" name="admin_username"><br>
-			User password:<input type="password" name="admin_password"><br>
-			<input type="submit" class = "button" name="submit" value="Login">
+    <form name="loginForm" method="post" action="AdminLogin7.php"  >
+        <br><br><br>
+        <table align="center" width="350" height="250" bgcolor="white">
+
+        <td>
+        <div class="container">
+    <label for="admin_name"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="admin_username" required>
+
+    <label for="admin_password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="admin_password" required>
+        
+    <button type="submit" class = "button" weight= "50%" align="center" name="submit" value="Login">Login</button>
+
+  </div></td>
+  
+
+           
 		</form>
 
 	</body>

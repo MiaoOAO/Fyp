@@ -4,8 +4,19 @@
 
 	if(isset( $_SESSION [ 'aname' ]) && ! empty ( $_SESSION [ 'aname' ])) 
 	{
-		echo  "Status : Log \n Admin name: " . $_SESSION [ 'aname' ];
-		
+    ?> 
+    <div style="background-color: rgba(201, 76, 76, 0.3); border:3px solid black; font-size:30px; padding:10px">
+      <?php
+        echo  "Welcome, " . $_SESSION [ 'aname' ];
+      ?>
+
+      <form method="post" action="" style="float:right">
+        <input type="submit" name="logout" value="logout" style="font-size:20px"></input>
+      </form>
+
+      </div>
+    <?php
+
 		$adminname = $_SESSION [ 'aname' ]; 
 		$resultadminID = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$adminname' ");
 		$rowID = mysqli_fetch_array($resultadminID);
@@ -27,25 +38,20 @@
 
 ?>
 
-	<form method="post" action="">
-	<input type="submit" name="logout" value="Logout"></input>
-    <input type="submit" name="main" value="Main Page"></input>
-	</form>
 
 
 <?php
-
 	if(isset($_POST["logout"]))
 	{
-	session_destroy();
-	echo 'You have been logged out. <a href="AdminLogin7.php">Go back</a>';
-    }
-    
-    if(isset($_POST["main"]))
-	{
-        header("Location: AdminAction7.1.php");
+  session_destroy();
+  ?>
+    <script type="text/javascript">
+      alert("You have been logged out.");
+      window.location.href="AdminLogin7.php";
+    </script>
+  <?php
+  //header("Location: AdminLogin7.php");
 	}
-
 ?>
 
 <!-------------------------------------------------------------------------------->
@@ -54,24 +60,36 @@
 <html>
 <head>
     <title>Product Details</title>
+    <link rel="stylesheet" href="ProductDetails.css">
 </head>
 <body>
+<div class="sidebar">
+<h1>ADMIN ACTION</h1>
+  <a href="AdminAction7.1.php">MAIN MENU</a>
 
-<table border="1" width="650px">
+  <a href="AddProduct2.php">INSERT NEW PRODUCT</a>
+  <a href="ProductDetails3.php">PRODUCTS LIST</a>
+  <a href="FunctionAdminSearchbarForm.php">SEARCH PRODUCTS BY NAME</a>
+  <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
+</div>
+	<div class="table ">
+  
+	<table align="center" table border="1" width="750px">
+
 			<tr>
-				<th>PRODUCT ID</th>
+      <th>PRODUCT ID</th>
 				<th>PRODUCT NAME</th>							
 				<th>PRICE</th>
 				<th>QUANTITY</th>
-                <th>COUNTRY</th>
-				<th>FLAVOR</th>
-				<th>HALAL/ NON-HALAL</th>
-				<th>EXPIRY DATE</th>
-                <th>INFORMATION</th>
+        <th>COUNTRY</th>
+        <th>FLAVOR</th>
+        <th>HALAL/ NON-HALAL</th>
+        <th>EXPIRY DATE</th>
+        <th>INFORMATION</th>
 				<th>IMAGE</th>
-                <th colspan="2">Action</th>
+        <th colspan="2">Action</th>
 			</tr>
-
+</div>
 </body>
 
 </html>
@@ -103,15 +121,15 @@ function confirmation()
    {
     ?>		
                                         <?php //这行是给row column list的用法 ?>
-        <tr>                        
+                                        <tr>                        
             <td><?php echo $row["id"]?></td>
             <td><?php echo $row["s_name"]?></td>
             <td><?php echo $row["s_price"]?></td>
             <td><?php echo $row["s_quantity"]?></td>
             <td><?php echo $row["s_country"]?></td>
-			<td><?php echo $row["s_flavor"]?></td>
-			<td><?php echo $row["s_certification"]?></td>
-			<td><?php echo $row["s_expiry"]?></td>
+            <td><?php echo $row["s_flavor"]?></td>
+            <td><?php echo $row["s_certification"]?></td>
+            <td><?php echo $row["s_expiry"]?></td>
             <td><?php echo $row["s_info"]?></td>
             <td><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>';?></td>
 

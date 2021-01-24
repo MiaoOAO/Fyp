@@ -46,6 +46,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Product information</title>
+
+ 	<!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 	<style>
 	.button {
 		background-color: #4CAF50;
@@ -78,83 +83,100 @@
 </head>
 	<h2 align='center'>Welcome! You can buy your own product here.</h2>
 <body class="body">
-	<table border="1" class="table"  align='center'>
-    	<tr>
-        	<th align='center' width="10%">Product Name</th>
-        	<th align='center' width="10%">Product Price</th>
-        	<th align='center' width="10%">Product Inventory</th>
-        	<th align='center' width="10%">Product Description</th>
-        	<th align='center' width="10%">Product Image</th>
-        	<th align='center' width="10%">Add to Cart</th>
-    	</tr>
 	
-	<?php
+<div class="container">
+	<div class="row col-md-12">
+		<div class="col-md-12">
+		
+		
+		<table border="1" class="table"  align='center'>
+			<tr>
+				<th align='center' width="10%">Product Name</th>
+				<th align='center' width="10%">Product Price</th>
+				<th align='center' width="10%">Product Inventory</th>
+				<th align='center' width="10%">Product Description</th>
+				<th align='center' width="10%">Product Image</th>
+				<th align='center' width="10%">Add to Cart</th>
+			</tr>
+		
+		
+		<?php
 
 
-		// Check connection
-		if (mysqli_connect_errno()){
-  			echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  		}
-
-		$sql = "SELECT * FROM productlist;";
-		$result = mysqli_query($conn, $sql);//result is a PHP array
-
-		$num_rows = mysqli_num_rows($result);
-		//echo $num_rows;
-
-        
-        
-		while ($row = mysqli_fetch_assoc($result)){
-			$p_id = $row["id"];
-			$p_name = $row["s_name"];
-			$p_price = $row["s_price"];
-            $p_inventory = $row["s_quantity"];
-			$p_descr = $row["s_info"];
-
-	/*		
-			$select_sql = "SELECT p_inventory FROM stock_info WHERE p_id = ".$p_id.";";
-
-			$select_result=mysqli_query($conn, $select_sql);
-            $select_num_rows=mysqli_num_rows($result);
-            
-            if($select_num_rows)
-            {
-                while($select_rows = mysqli_fetch_array($select_result))
-                {
-					$p_inventory=$select_rows["s_quantity"];
-				}
-            }
-
-            else
-            {
-				echo "not fetch";
+			// Check connection
+			if (mysqli_connect_errno()){
+				echo "Failed to connect to MySQL: " . mysqli_connect_error();
 			}
-    */
-			
-			
-			echo "<tr>";
-			echo "<td align='center'>".$p_name."</td>";
-			echo "<td align='center'>".$p_price."</td>";
-			echo "<td align='center'>".$p_inventory."</td>";
-			echo "<td align='center'>".$p_descr."</td>";
-            echo '<td align="center">
-            <img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200">
-            </td>';
 
-            ?>
-            <td><a align='center' href='UserAddProduct12(test).php?pid=<?php echo $p_id;?>'>View More</a></td>
+			$sql = "SELECT * FROM productlist;";
+			$result = mysqli_query($conn, $sql);//result is a PHP array
 
-            <?php
+			$num_rows = mysqli_num_rows($result);
+			//echo $num_rows;
 
-			echo "</tr>";
-			
-		}
-		mysqli_close($conn);
-    ?>
-	</table>
+		
+			while ($row = mysqli_fetch_assoc($result)){
+				$p_id = $row["id"];
+				$p_name = $row["s_name"];
+				$p_price = $row["s_price"];
+				$p_inventory = $row["s_quantity"];
+				$p_descr = $row["s_info"];
+
+		/*		
+				$select_sql = "SELECT p_inventory FROM stock_info WHERE p_id = ".$p_id.";";
+
+				$select_result=mysqli_query($conn, $select_sql);
+				$select_num_rows=mysqli_num_rows($result);
+				
+				if($select_num_rows)
+				{
+					while($select_rows = mysqli_fetch_array($select_result))
+					{
+						$p_inventory=$select_rows["s_quantity"];
+					}
+				}
+
+				else
+				{
+					echo "not fetch";
+				}
+		*/
+				
+				
+				echo "<tr>";
+				echo "<td align='center'>".$p_name."</td>";
+				echo "<td align='center'>".$p_price."</td>";
+				echo "<td align='center'>".$p_inventory."</td>";
+				echo "<td align='center'>".$p_descr."</td>";
+				echo '<td align="center">
+				<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200">
+				</td>';
+
+				?>
+				<td><a align='center' href='UserAddProduct12(test).php?pid=<?php echo $p_id;?>'>View More</a></td>
+
+				<?php
+
+				echo "</tr>";
+				
+				
+			}
+			mysqli_close($conn);
+		?>
+	
+	</table>		
+			</div>
+		</div>
+	</div>
+
 	<br><br>
 	<a  align='right' href='UserViewCart13(test).php?user=<?php echo $username ?>'>Enough adding, click here to shopcart.</a>
 	<br><br><br>
 
+
+
+
+
+
+
 </body>
-</html>
