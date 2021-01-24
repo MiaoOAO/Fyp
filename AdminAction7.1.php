@@ -4,8 +4,19 @@
 
 	if(isset( $_SESSION [ 'aname' ]) && ! empty ( $_SESSION [ 'aname' ])) 
 	{
-		echo  "Status : Log \n Admin name: " . $_SESSION [ 'aname' ];
-		
+    ?> 
+    <div style="background-color: rgba(201, 76, 76, 0.3); border:3px solid black; font-size:30px; padding:10px">
+      <?php
+        echo  "Welcome, " . $_SESSION [ 'aname' ];
+      ?>
+
+      <form method="post" action="" style="float:right">
+        <input type="submit" name="logout" value="logout" style="font-size:20px"></input>
+      </form>
+
+      </div>
+    <?php
+
 		$adminname = $_SESSION [ 'aname' ]; 
 		$resultadminID = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$adminname' ");
 		$rowID = mysqli_fetch_array($resultadminID);
@@ -27,32 +38,41 @@
 
 ?>
 
-	<form method="post" action="">
-	<input type="submit" name="logout" value="logout"></input>
-	</form>
+
 
 <?php
-
 	if(isset($_POST["logout"]))
 	{
-	session_destroy();
-	echo 'You have been logged out. <a href="AdminLogin7.php">Go back</a>';
+  session_destroy();
+  ?>
+    <script type="text/javascript">
+      alert("You have been logged out.");
+      window.location.href="AdminLogin7.php";
+    </script>
+  <?php
+  //header("Location: AdminLogin7.php");
 	}
-
 ?>
 
 <!-------------------------------------------------------------------------------->
 
 <html>
-<head></head>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="AdminAction.css">
+</head>
 <body>
-    <h1>ADMIN ACTION</h1>
-    <a href='AddProduct2.php'>1. INSERT NEW PRODUCT</a>
-    <br><br>
-    <a href="ProductDetails3.php">2. PRODUCTS LIST</a>
-    <br><br>
-	<a href="FunctionAdminSearchbar.php">3. PRODUCTS LIST BY SEARCH</a>
-	<br><br>
-    <a href="AdminUpdateInfo7.2.php">4. UPDATE PROFILE</a>
+
+<div class="sidebar">
+<h1>ADMIN ACTION</h1>
+<a href="AdminAction7.1.php">MAIN MENU</a>
+
+  <a href="AddProduct2.php">INSERT NEW PRODUCT</a>
+  <a href="ProductDetails3.php">PRODUCTS LIST</a>
+  <a href="FunctionAdminSearchbarForm.php">SEARCH PRODUCTS BY NAME</a>
+  <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
+
+</div>
+
+
 </body>
 </html>

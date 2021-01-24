@@ -2,20 +2,20 @@
 
 <html>
 <head>
-
+<link rel="stylesheet" href="AdminRegister.css">
 </head>
 <body>
 		
 		<h1>Admin Registration Page</h1>
-
+        <div class="center">
         <form action="AdminRegister6.php" method="post">
-            Username: <input type="text" name="admin_username"><br>
-            password: <input type="password" name="admin_password"><br>
-            Confirm Admin Password: <input type="password" name="admin_cfm_password"><br>
-            Email: <input type="email" name="admin_email"><br>
-            <input type="submit" name="submit" value="CONFIRM">
+          <p>  Username: <input type="text" name="admin_username"><br></p>
+           <p> password: <input type="password" name="admin_password"><br></p>
+          <p>  Confirm Admin Password: <input type="password" name="admin_cfm_password"><br></p>
+          <p>  Email: <input type="email" name="admin_email"><br></p>
+           <p> <input type="submit" name="submit" value="CONFIRM"></P>
 	   </form>
-
+       </div>
 	
 
 </body>
