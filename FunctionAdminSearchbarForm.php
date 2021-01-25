@@ -119,8 +119,6 @@
 				<th>QUANTITY</th>
                 <th>COUNTRY</th>
                 <th>FLAVOR</th>
-                <th>test</th>
-                <th>test2</th>
                 <th>HALAL/ NON-HALAL</th>
                 <th>EXPIRY DATE</th>
                 <th>INFORMATION</th>
