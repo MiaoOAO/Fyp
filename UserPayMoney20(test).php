@@ -46,8 +46,10 @@ $result = mysqli_query($conn, $sql);
 if($result){
 	echo "<br>";
     echo "<br>";
-    echo "PAYMENT HAVE PROCESS SUCESSFULLY! THANK YOU! HAVE A NICE DAY!!";
+	echo "PAYMENT HAVE PROCESS SUCESSFULLY! THANK YOU! HAVE A NICE DAY!!";
+	
 	echo "<a href='UserOrderLastProcess21(test).php'>Click here to see order information.</a>";
+	
 }else{
 	echo "You have to pay first!";
 }

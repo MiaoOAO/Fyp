@@ -1,0 +1,238 @@
+/* import fonts from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Fraunces&family=Libre+Baskerville&family=Montserrat&family=Open+Sans&display=swap');
+
+
+:root {
+
+/*fonts*/
+--Cinzel: 'Cinzel', serif;
+--Fraunces: 'Fraunces', serif;
+--Libre: 'Libre Baskerville', serif;
+--Montserrat: 'Montserrat', sans-serif;
+--Open : 'Open Sans', sans-serif;
+
+/*color*/
+  --light-gray: #2b3032a1;
+  --primary-color: orangered;
+  --border: #2b303218;
+  --text-color: #ff686b;
+
+
+  --pink-dark:#FA686A; 
+  --pink-light:#F4A4A4;
+  --title-dark:#353321;
+  --title-light:#E9D4CE;
+  --title-red:#D44B29;
+
+  --btn-red:#F53163;
+
+  --white:#FEF2F2;
+
+  --blue:#4EA1D3;
+
+
+}
+
+.c p{
+    font-size: 1.3rem;
+    font-family: var(--Libre);
+}
+.c h4{
+    font-size: 1.3rem;
+    font-family: var(--Fraunces);
+}
+
+*p{
+    font-family: var(--Libre);
+}
+
+*h2{
+    font-family: var(--Fraunces);
+}
+
+
+/* backgroud image */
+        .bg-image img {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: -99999;
+        top: 0px;
+        }
+
+        .bg-image::after {
+        content: "";
+        background: black;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        opacity: 0.0;
+        z-index: -1111;
+        }
+
+
+/* icon bar */
+        .icon-bar {
+        position: fixed;
+        bottom: 4rem;
+        z-index: 9999;
+        }
+
+        .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+        background-color: #000;
+        }
+
+        .facebook {
+        background: #3b5998;
+        color: white;
+        }
+
+        .youtube {
+        background: #bb0000;
+        color: white;
+        }
+
+        .instagram {
+        background: #125688;
+        color: white;
+        }
+
+/* nav bar */       
+    #headerNav{
+        z-index: 999;
+        position: absolute;
+        top:0;
+        width:98vw;
+            
+    }
+
+    .nav-item a{
+        color: var(--title-dark) !important; 
+        font-size: 1.3rem;
+        margin-left:1rem;
+        font-family: var(--Open); 
+        
+    }
+
+    .nav-item a:hover{
+        color: red !important;
+        font-weight: bolder;
+    }
+    .dropdown .dropdown-menu{
+        background-color:black !important;
+        
+    }
+
+    .user-register, .user-login{
+        background-color: rgb(33, 47, 60 ,0.1);
+        border-radius: 21px;
+           
+    }
+        .user-register:hover, .user-login:hover{
+        background-color: rgb(33, 47, 60 ,0.3);
+        border-radius: 21px;
+          
+    }
+
+    .user-register a:hover{
+        color:red !important;
+    }
+
+    .logout-btn input[type=submit]{
+        background-color:var(--btn-red);
+		color:var(--q);
+		padding: 12px 20px;
+		border-radius: 4px;
+		width: 6rem;
+        border-radius: 21px;
+
+    }
+
+/* title */
+    .page-title{
+        background-color:black;
+         opacity: 0.3;
+
+    }
+
+    .page-title p {
+        animation-duration: 3s;
+        animation-name: slidein;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bolder;
+        font-family: var(--Libre);
+        margin-top: 1rem;
+        text-shadow: 2px 2px 4px #ff6347;
+        color: white;
+    }
+
+    @keyframes slidein {
+    from {
+        margin-left: ;
+        width: 300%;
+    }
+
+    75% {
+        font-size: 300%;
+        margin-left: 0%;
+        width: 150%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+    }
+
+
+/** footer **/
+    #footer {
+        background-color: var(--pink-light);
+      
+    }
+
+    #footer h6{
+        font-size: 1rem;
+        margin: 15px 0px;
+        font-family: var(--Fraunces);
+        color:var(--title-dark);
+    }
+
+    #footer h3 {
+        font-size: 2.0rem;
+        margin: 15px 0px;
+        color: var(--title-red);
+        font-family: var(--Libre);
+    }
+
+    #footer p{
+        color:black;
+       font-family: var(--Libre);
+    }
+    
+    #footer a {
+        color: black;
+        text-decoration: none;
+        font-family: var(--Libre);
+    }
+
+    #footer .container a:hover {
+        color: #ff4500;
+        font-weight: bolder;
+    }
+    #footer .social-btn ul{
+            margin-bottom:0px;
+            height:5rem;
+    }

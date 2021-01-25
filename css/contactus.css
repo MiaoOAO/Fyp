@@ -1,0 +1,79 @@
+#contact .row img {
+    width: 200px;
+}
+
+#contact {
+    box-shadow: 1px 1px 2px black,
+        0 0 25px orangered,
+        0 0 5px darkblue;
+    padding: 3.5rem;
+    background-color: rgb(211, 211, 211, 0.7);
+}
+
+
+#contact .row p {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+    font-weight: bolder;
+    font-family: var(--roboto);
+}
+
+#contact .row h3 {
+    font-size: 2.5rem;
+    color: orangered;
+    text-shadow: 2px 2px 4px #000000;
+    font-weight: bolder;
+    font-family: var(--abril);
+}
+
+#contact .row h4 {
+    font-size: 1.5rem;
+    color: tomato;
+    margin-top: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: bolder;
+    font-family: var(--sriracha);
+}
+
+
+.title-map h3 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: tomato;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+    color: white;
+    font-family: var(--abril);
+}
+
+.location {
+    padding-top: 3rem;
+    text-align: center;
+    height: 80vh;
+}
+
+.location a {
+    text-decoration: none;
+    color: tomato;
+    font-size: 1.5rem;
+}
+
+.location a:hover {
+    text-decoration: none;
+    color: orangered;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#map_canvas iframe {
+    width: 600px;
+    height: 450px;
+}
+
+
+@media only screen and (max-width: 769px) {
+    #map_canvas iframe {
+        width: 350px;
+        height: 450px;
+    }
+}

@@ -301,18 +301,18 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 				
 								$shipment_address = $row['d_address'];
 								$shipment_state = $row['d_city'];
-								$total_item = $_COOKIE['total_item'];
-								$productPrice = $_COOKIE['total_price'];
+								//$total_item = $_COOKIE['total_item'];
+								//$productPrice = $_COOKIE['total_price'];
 								$shipment_way = $row['d_company'];
 								$shipment_price = $row['d_price'];
-								$totalPrice = $shipment_price + $productPrice;
+								$totalPriceship = $shipment_price + $totalPrice;
 
 								echo "<tr>";
-								echo "<td>".$total_item."</td>";
-								echo "<td> RM ".$productPrice."</td>";
+								echo "<td>".$totalItem."</td>";
+								echo "<td> RM ".$totalPrice."</td>";
 								echo "<td>".$shipment_way."</td>";
 								echo "<td> RM ".$shipment_price."</td>";
-								echo "<td> RM ".$totalPrice."</td>";
+								echo "<td> RM ".$totalPriceship."</td>";
 								echo "<td>".$shipment_address."</td>";
 								echo "<td>".$shipment_state."</td>";
 								echo "</tr>";

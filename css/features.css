@@ -1,0 +1,199 @@
+.one img {
+    width: 100%;
+}
+
+
+.main-header {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-header h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-family: var(--abril);
+
+}
+
+.main-header h1 span {
+    color: orangered;
+
+}
+
+.main-header {
+
+    font-size: 2rem;
+    color: white;
+}
+
+.main-header p {
+
+    font-size: 2rem;
+    color: white;
+}
+
+#one {
+    background: url(/assets/f-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#one .container {
+    left: 13%;
+}
+
+#one .row .up {
+    margin-bottom: 3rem;
+}
+
+#one h2 {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: orangered;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: var(--abril);
+}
+
+#one h3 {
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    text-shadow: 2px 2px 4px #ec7d51;
+    background: rgba(255, 255, 255, 0.781);
+    font-family: var(--roboto);
+}
+
+#one h3 span {
+    font-weight: bold;
+
+}
+
+#one button {
+    left: 60%;
+    bottom: 10%;
+    color: rgb(0, 255, 255);
+    background-color: rgb(220, 20, 60, 1);
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 35px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background: #f1f1f1;
+    margin-bottom: 4rem;
+}
+
+.card h3 {
+    margin-bottom: 2rem;
+    color: tomato;
+    font-family: var(--abril);
+
+}
+
+.card p {
+    font-family: var(--roboto);
+}
+
+.card img {
+    height: 400px;
+
+}
+
+.card>div {
+    padding: 2rem;
+}
+
+.card:nth-child(even) img {
+    order: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    color: tomato;
+}
+
+@media(max-width:700px) {
+    .card {
+        display: block;
+    }
+}
+
+.logo {
+
+    margin: 3rem;
+    object-fit: cover;
+
+}
+
+.logo img {
+    margin: 2rem;
+    object-fit: cover;
+}
+
+#brands h2 {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    color: orangered;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: var(--abril);
+}
+
+#brands {
+    background-image: url(/assets/f-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+@media only screen and (max-width: 769px) {}

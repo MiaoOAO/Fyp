@@ -1,0 +1,293 @@
+/** **/
+.one {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.one .banner-car {
+    position: relative;
+}
+
+.one .banner-car button {
+    position: absolute;
+    left: 60%;
+    bottom: 10%;
+    color: rgb(0, 255, 255);
+    background-color: rgb(220, 20, 60, 0.5);
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--abril);
+}
+
+
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 35px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/** **/
+/** **/
+
+
+.two {
+    height: 100vh;
+}
+
+
+.two img {
+    position: relative;
+}
+
+.two .container {
+    height: 70vh;
+    box-shadow: 1px 1px 2px black,
+        0 0 25px orangered,
+        0 0 5px darkblue;
+    padding-bottom: 2rem;
+    text-align: center;
+    background: rgba(161, 149, 147, 0.3);
+
+}
+
+#two h2 {
+    text-align: center;
+    padding-top: 4rem;
+    color: orangered;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 2rem;
+    font-family: var(--abril);
+}
+
+.box-two .col-md-4 .box-up {
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: auto;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(161, 149, 147, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.box-two .col-md-4 .fas {
+    font-size: 4rem;
+}
+
+.box-two .col-md-4 .box-dwon {
+    text-align: center;
+    border: 1px solid black;
+    padding: 2rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.781);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+}
+
+.box-two .col-md-4 .box-dwon p {
+    text-align: center;
+    justify-content: center;
+    top: 20%;
+    position: relative;
+    font-family: var(--roboto);
+}
+
+#two {
+    background-image: url(/assets/f-colour.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+
+
+/** /two **/
+
+.container-fluid h2 {
+    color: orangered;
+    text-align: center;
+    padding-top: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: var(--abril);
+
+}
+
+#video {
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+}
+
+#video h2 {
+    margin-top: 4rem;
+    text-shadow: 2px 2px 4px #000000;
+    color: orangered;
+    font-family: var(--abril);
+}
+
+#video p {
+    font-family: var(--roboto);
+}
+
+#video .video {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 3rem;
+}
+
+#video video {
+    width: 1050px;
+    height: 680px;
+}
+
+.contact {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.contact h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    font-family: sriracha;
+
+}
+
+.contact h2 span {
+    color: orangered;
+
+}
+
+.contact {
+
+    font-size: 2rem;
+    color: white;
+}
+
+.contact p {
+
+    font-size: 2rem;
+    color: white;
+}
+
+.contact button {
+    left: 60%;
+    bottom: 10%;
+    color: rgb(0, 255, 255);
+    background-color: rgb(220, 20, 60, 1);
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 35px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media only screen and (max-width: 769px) {
+
+    .one .banner-car button {
+        position: absolute;
+        left: 60%;
+        bottom: 10%;
+        color: rgb(0, 255, 255);
+        background-color: rgb(220, 20, 60, 0.5);
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 3px;
+        padding: 10px;
+        text-align: center;
+
+    }
+
+    #two {
+        height: 1700px;
+    }
+
+    .two .container {
+        height: 1550px;
+        box-shadow: 1px 1px 2px black,
+            0 0 25px orangered,
+            0 0 5px darkblue;
+        padding-bottom: 2rem;
+        text-align: center;
+        background: rgba(161, 149, 147, 0.3);
+
+    }
+
+    .container-fluid h2 {
+        color: orangered;
+        text-align: center;
+        padding-top: 60rem;
+        text-shadow: 2px 2px 4px #000000;
+
+    }
+
+    .row {
+        margin-left: 0 !important;
+    }
+
+    #video video {
+        width: 438px;
+        height: 246px;
+    }
+}

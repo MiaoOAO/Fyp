@@ -1,6 +1,7 @@
 <?php 
 	include("DataConnection1.php"); 
 	session_start();
+	ob_start();
 
 	if(isset( $_SESSION [ 'uname' ]) && ! empty ( $_SESSION [ 'uname' ])) 
 	{
@@ -146,7 +147,6 @@
 	</head>
 
 	<body>
-		
 		<div class="container product"> 
             <div class="row col-md-12">
                 <div class="col-md-6 text-left">
@@ -163,11 +163,14 @@
 						</div>
 						<div class="product-configuration">
 							<div class="info">
-								<p><?php echo $row["s_info"] ?></p>
+								<p><?php echo "Product Flavor : " . $row["s_flavor"] ?></p>
+								<p><?php echo "Halal Certification : " . $row["s_certification"] ?></p>
+								<p><?php echo "Expiry Period : " . $row["s_expiry"] . " Months" ?></p>
+								<p><?php echo "Product Description : " . $row["s_info"] ?></p>
 							</div>
 							<h5>RM <?php echo $row["s_price"]  ?></h5>
 
-							<form class="ADD-product" name="" method="post" action="" enctype="multipart/form-data">
+							<form class="ADD-product" method="post" action="" enctype="multipart/form-data">
 								<p>Quantity<br><input type="text" name="user_qty" placeholder=""></p>
 								<p><input type="submit" name="orderbtn" value="ADD TO CART">
 							</form>
@@ -188,11 +191,11 @@
 
                     
                     
-                    while ($row = mysqli_fetch_assoc($result))
+                    while ($rowComment = mysqli_fetch_assoc($result))
                     {
-                        $comment_userid = $row["user_id"];
-                        $com = $row["comment"];
-                        $t = $row["time"];
+                        $comment_userid = $rowComment["user_id"];
+                        $com = $rowComment["comment"];
+                        $t = $rowComment["time"];
                         ?>
                             <div style="border:1px solid black; padding:5px; margin:5px; height:150px">
                             <h4>    <?php echo $comment_userid; ?> </h4>
@@ -216,31 +219,6 @@
 		</div>
 
  
-
-
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-
-
-		<h1>Product Detail</h1>
-
-	<!-- 
-		<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>'?>
-	-->
-		<br>Product Name : <?php echo $row["s_name"] ?>
-		<br>Product Price : <?php echo $row["s_price"]  ?>
-		<br>Product Stock : <?php echo $row["s_quantity"] ?>
-		<br>Origin : <?php echo $row["s_country"] ?>
-		<br>Information : <?php echo $row["s_info"] ?>
-			
-
-		<h1>Your Order Detail</h1>
-
-		<form name="" method="post" action="" enctype="multipart/form-data">
-			<p>Quantity:<input type="text" name="user_qty"></p>
-			<p><input type="submit" name="orderbtn" value="Add to Cart">
-		</form>
 		
 	</body>
 </html>

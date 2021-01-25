@@ -40,7 +40,7 @@ session_start(); ?>
             if($count > 0)
             {
                 $_SESSION['uname'] = $uname;
-                header('Location: UserProductList11(test).php');
+                header('Location: main.php');
             }
 
             else

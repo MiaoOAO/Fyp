@@ -1,0 +1,398 @@
+/*header*/
+header {
+  padding-top: 3rem;
+  height: 55vh;
+  margin-bottom: 5rem;
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+}
+
+.head #logo {
+  grid-column: 2/3;
+  font-size: 2rem;
+  width: 150px;
+}
+
+.head h1 {
+  justify-self: end;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+#hd {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  height: 30%;
+  width: 80%;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.headline {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  font-size: 100px;
+  transform: translate(-20%, -70%);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: var(--abril);
+}
+
+header .jumbotron .row {
+  position: relative;
+  height: 13vh;
+  width: 100%;
+}
+
+header .logo-company img {
+  max-width: 12rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+header .hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header .site-title {
+  font-family: var(--gugi);
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header-links a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: rgb(255, 245, 245);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo-company i {
+  font-size: 80px;
+  margin-top: 10px;
+}
+
+header .jumbotron {
+  margin-bottom: 0px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 66vh;
+  background: linear-gradient(to left, yellowgreen, darkred);
+  z-index: -1;
+}
+
+/* /header*/
+
+/*Navigation Menu*/
+.navbar {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-right: 0px !important;
+  background-color: #020202 !important;
+  z-index: 9999;
+  font-family: var(--sriracha);
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+.navbar-brand img {
+  max-width: 4rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+  border-color: rgb(255, 102, 203);
+}
+
+.navbar-nav {
+  padding: 0px 16px;
+  background-color: #020202;
+  width: 100%;
+}
+
+.navbar-nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3rem !important;
+}
+
+.navbar-nav a:hover {
+  background-color: white;
+  color: #ff4500;
+  height: 100%;
+  font-weight: bolder;
+}
+
+.nav-link {
+  padding: 1.5rem 1rem !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+  padding: 0 1.3em;
+}
+
+.navbar-nav .basket-icon {
+  margin-right: 6.5rem !important;
+}
+
+/* /Navigation Menu*/
+
+/* icon bar */
+.icon-bar {
+  position: fixed;
+  bottom: 5rem;
+  z-index: 9999;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.instagram {
+  background: #125688;
+  color: white;
+}
+
+/* icon bar */
+
+/** footer **/
+#footer {
+  background-color: black;
+  color: white;
+}
+
+#footer .container img {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+#footer .container h4 {
+  font-size: 1rem;
+  margin: 15px 0px;
+  font-family: var(--roboto);
+}
+
+#footer .container h3 {
+  font-size: 2.5rem;
+  margin: 15px 0px;
+  color: tomato;
+  font-family: var(--sofia);
+}
+
+#footer .container span {
+  font-size: 1.5rem;
+  margin: 15px 0px;
+  margin-bottom: 1rem;
+  color: tomato;
+  font-family: var(--abril);
+}
+
+
+#footer .container a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .container a:hover {
+  color: #ff4500;
+  font-weight: bolder;
+}
+
+.logo-media .fa:hover {
+  opacity: 0.7;
+}
+
+.logo-media .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.logo-media .fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.logo-media .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/** /footer **/
+
+.logo-media .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+@media only screen and (max-width: 769px) {
+  .navbar-nav {
+    overflow: hidden;
+    padding: 0spx 16px;
+    background-color: #020202;
+    width: 100%;
+    height: auto;
+    padding: 100px;
+  }
+
+  .navbar-brand img {
+    max-width: 5rem;
+  }
+
+  header img {
+    max-width: 10rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  header {
+    padding-top: 4rem;
+    height: 50vh;
+    margin-bottom: 5rem;
+  }
+
+  .head {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 15%;
+    min-height: 15vh;
+  }
+
+  .head #logo {
+    grid-column: 2/3;
+    font-size: 2rem;
+    width: 150px;
+  }
+
+  .head h1 {
+    justify-self: end;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .headline {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    font-size: 60px;
+    transform: translate(-20%, -70%);
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  header .logo-company img {
+    max-width: 12rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  header .hero img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  header .site-title {
+    font-family: var(--gugi);
+    font-size: 3.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .header-links a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: rgb(255, 245, 245);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .logo-company i {
+    font-size: 70px;
+    margin-top: 10px;
+  }
+
+  /* /header*/
+
+}
