@@ -3,22 +3,128 @@
 <html>
 <head>
 
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--Font Awesome SDN-->
+    <script src="https://kit.fontawesome.com/5953284528.js" crossorigin="anonymous"></script>
+
+    <!--Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!--Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style,footer,header,navbar.css">
+    <link rel="stylesheet" href="./css/allPages-style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+    <style>
+        input[type=submit]{
+            background-color:var(--btn-red);
+		    color:var(--q);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+		    width: 100%;
+            border-radius: 21px;
+        }
+
+        .register h1{
+            text-align: center;
+            color:var(--title-red);
+        }
+
+        .register:hover{
+        background-color: rgb(254, 242, 242 ,0.3);
+        
+        }
+
+        .register{
+        background-color: rgb(33, 47, 60 ,0.1);
+        border-radius: 21px;
+    
+        }
+
+        label{
+            color:var(--title-dark);
+        }
+
+    </style>
+
 </head>
+
+    <!-- background image -->
+    <div class="bg-image">
+        <img src="./assets/9.jpg" alt="">
+    </div>  
+
+    <!-- icon bar-->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <!-- up button-->
+    <div class="up" style="position: fixed; bottom: 0; right: 0; z-index: 1;">
+        <a href="#"><img src="https://img.icons8.com/clouds/100/000000/up.png"></a>
+    </div>
+
+    <title>Registration User Account</title>
+
 <body>
 		
-		<h1>User Registration Page</h1>
+	<div class="container text-center text-md-left">
+        <div class="row col-md-12">
+            <div class="col-md-6  p-lg-5 mx-auto my-4 register" data-aos="fade-left">
 
-        <form action="UserRegister9.php" method="post">
-            Username: <input type="text" name="user_username"><br>
-            password: <input type="password" name="user_password"><br>
-            Confirm Admin Password: <input type="password" name="user_cfm_password"><br>
-            Email: <input type="email" name="user_email"><br>
-            Contact number:<input type="tel" name="user_phone" pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" placeholder = "eg:0123456789" ><br>
-            <input type="submit" name="submit" value="CONFIRM">
-	   </form>
+		    <h1>User Registration</h1>
+
+            <form action="UserRegister9.php" method="post">
+                    <div class="form-group">
+                        <label >User name</label>
+                        <input type="text" name="user_username" class="form-control"  placeholder="user name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label >Password</label>
+                        <input type="password" name="user_password" class="form-control"  placeholder="password"  required>
+                    </div>
+                    <div class="form-group">
+                        <label >Confirm Password</label>
+                        <input type="password" name="user_cfm_password" class="form-control"  placeholder="same password"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label >Email</label>
+                        <input type="email" name="user_email" class="form-control" placeholder="personal email"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label > Contact number</label>
+                        <input type="tel" name="user_phone" class="form-control"  pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" placeholder="eg:0123456789"  required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="form-check">
+                        <input class="form-check-input is-invalid" type="checkbox" required>
+                        <label class="form-check-label" for="invalidCheck3">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                        </div>
+                    </div>
+                <input type="submit" name="submit" value="CONFIRM">
+            </form>
+        </div>
+    </div>      
 
 	
-
 </body>
 </html>
     
@@ -41,7 +147,7 @@
                     <script>
                         alert("Password are not same, please try again!!");
                     </script>
-                   <?php
+                    <?php
                 }
 
             else if($uusername == null || $upassword == null)
@@ -64,7 +170,7 @@
                     <script>
                         alert("This username has been used, please try other.");
                     </script>
-                   <?php
+                    <?php
                 }
         
                 else
@@ -84,4 +190,18 @@
 
             
         }
+    ?>    
+
+ <!--JS (from bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 150,
+                duration: 1000
+            });
+        </script>
 

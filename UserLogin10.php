@@ -8,7 +8,7 @@ session_start(); ?>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
- 
+
 
     <!--Font Awesome SDN-->
     <script src="https://kit.fontawesome.com/5953284528.js" crossorigin="anonymous"></script>
@@ -24,6 +24,39 @@ session_start(); ?>
 
     <style>
 
+        input[type=submit]{
+            background-color:var(--btn-red);
+		    color:var(--q);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+		    width: 100%;
+            border-radius: 21px;
+        }
+
+        .login h1{
+            text-align: center;
+            color:var(--title-red);
+        }    
+
+        
+        .login:hover{
+        background-color: rgb(254, 242, 242 ,0.3);
+        
+        }
+
+        .login{
+        background-color: rgb(33, 47, 60 ,0.1);
+        border-radius: 21px;
+    
+        }
+
+        label{
+            color:var(--title-dark);
+        }
+
+        #textHelp{
+            color:var(--title-red) !important;
+        }
 
     </style>
 
@@ -51,56 +84,74 @@ session_start(); ?>
 
 
 	<body>
-
-    <h2>ghrthh hhe </h2>
-
-
-        <div class="container text-center text-md-left">
+        <br><br>
+        
+        <div class="container text-center text-md-left" data-aos="fade-left">
             <div class="row col-md-12">
-                <h2>User Login</h2>
+                <div class="col-md-6  p-lg-5 mx-auto my-5 login">
+                    <h1>User Login</h1>
+                
                     <form action="UserLogin10.php" method="post">
-                        User name:<input type="text" name="user_username"><br>
-                        User password:<input type="password" name="user_password"><br>
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">User name</label>
+                        <input type="text" name="user_username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+                        <small id="textHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">User password</label>
+                        <input type="password" name="user_password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+        
+
                         <input type="submit" class = "button" name="submit" value="Login">
                     </form>
+                </div>
             </div>
-        </div>
+        </div>     
+
 	</body>
 </html>
 
-<?php
-    //reference from -->  https://makitweb.com/create-simple-login-page-with-php-and-mysql/
-    if(isset($_POST['submit']))
-    {
+<div class="container text-center text-md-left">
+        <div class="row col-md-12">
+            <div class="col-md-6 mx-auto">
+                <?php
+                    //reference from -->  https://makitweb.com/create-simple-login-page-with-php-and-mysql/
+                    if(isset($_POST['submit']))
+                    {
 
-        $uname = mysqli_real_escape_string($conn, $_POST['user_username']);
-        $password = mysqli_real_escape_string($conn, $_POST['user_password']);
+                        $uname = mysqli_real_escape_string($conn, $_POST['user_username']);
+                        $password = mysqli_real_escape_string($conn, $_POST['user_password']);
 
-        if ($uname != "" && $password != "")
-        {
+                        if ($uname != "" && $password != "")
+                        {
 
-            $sql_query = "select count(*) as cntUser from user where username='".$uname."' and password='".$password."'";
-            $result = mysqli_query($conn, $sql_query);
-            $row = mysqli_fetch_array($result);
+                            $sql_query = "select count(*) as cntUser from user where username='".$uname."' and password='".$password."'";
+                            $result = mysqli_query($conn, $sql_query);
+                            $row = mysqli_fetch_array($result);
 
-            $count = $row['cntUser'];
+                            $count = $row['cntUser'];
 
-            if($count > 0)
-            {
-                $_SESSION['uname'] = $uname;
-                header('Location: main.php');
-            }
+                            if($count > 0)
+                            {
+                                $_SESSION['uname'] = $uname;
+                                header('Location: products.php');
+                            }
 
-            else
-            {
-                echo "Invalid username and password";
-            }
+                            else
+                            {
+                                echo "Invalid username and password";
+                            }
 
-        }
+                        }
 
-    }
+                    }
 
-?>
+                ?>
+            </div>
+        </div>   
+    </div>  
 
 
  <!--JS (from bootstrap) -->
