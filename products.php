@@ -23,7 +23,7 @@
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
- 
+
 
     <!--Font Awesome SDN-->
     <script src="https://kit.fontawesome.com/5953284528.js" crossorigin="anonymous"></script>
@@ -34,23 +34,46 @@
     <!-- -->
     <link rel="stylesheet" href="./css/style,footer,header,navbar.css">
     <link rel="stylesheet" href="./css/allPages-style.css">
-     
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+
     <style>
 
-         .carousel-item img{
+        .carousel-item img{
             height:80vh;
         }
-    
+        
+        .search{
+            margin-bottom:30px;
+        }
+
+        .search input[name="search"]{
+            background-color:var(--btn-red);
+		    color:var(--q);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+            border-radius: 21px;
+        }
+
+        .search input[name="show"]{
+            background-color:var(--title-red);
+		    color:var(--q);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+            border-radius: 21px;
+        }
+        .search input[name="searchbar"]{
+            background-color:var(--title-light);
+		    color:var(--title-dark);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+            border-radius: 21px;
+        }
     </style>
 
 </head>
 
-  <!--JS (from bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+    
 <body>
     
     <!-- background image -->
@@ -106,6 +129,7 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
+
                 </ul>
 
     <?php
@@ -228,6 +252,54 @@
             </div>
         </div>
     </div>
+    <!-- search bar -->
+        <div class="search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <form action="" method="post">
+                            <input name="searchbar" type="search" placeholder="Searching by name...">
+                            <input name="search" type="submit" value="Search">
+                            <input name="show" type="submit" value="Show All">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- search bar -->
+
+    <!-- -------------------Search bar 从这行开始------------------ -->
+
+    <?php
+    
+    if(isset($_POST["search"]))
+    {
+        $search = $_POST["searchbar"];
+
+        if($search == NULL)
+        {
+            ?>
+                <script>
+                    alert("Search cannot be NULL!");
+                </script>
+            <?php
+        }
+
+        else
+        {
+            $_SESSION["search"] = $search;
+            header("Location: products.php"); //这边自己改你要link的address
+            ob_end_flush();
+        }
+    }
+
+    if(isset($_POST["show"]))
+    {
+        unset($_SESSION["search"]);
+        header("Location: products.php");
+    }    
+    ?>
+    <!-- --------------------------------------------------------------- -->
 
 </body>
 
@@ -235,7 +307,26 @@
 
     <div class ="card-product">
                 <?php  
-                $res = mysqli_query($conn,"select * from productlist");
+                /*
+                    if(isset($_POST["search"]))
+                    {
+                        $s = $_SESSION["search"];
+                        $res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
+                    }
+
+                    else if(isset($_POST["show"]))
+                    {
+                        $res = mysqli_query($conn,"select * from productlist");
+                    }
+
+                    else
+                    {
+                        $res = mysqli_query($conn,"select * from productlist");
+                    }
+                */
+                
+                $s = $_SESSION["search"];
+                $res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
 
                     while($row=mysqli_fetch_array($res))
                     {
@@ -257,6 +348,11 @@
                         </div>		
                         <?php
                     } 
+
+                    if($p_id == NULL)
+                    {
+                        echo "SORRY, PRODUCT CANNOT FOUND!";
+                    }
                 
                 ?>
     </div>
@@ -349,9 +445,9 @@
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
+<!--JS (from bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
