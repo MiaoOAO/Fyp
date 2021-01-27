@@ -1,14 +1,5 @@
 <?php 
-	include("DataConnection1.php"); // database sql connection 
-
-	session_start(); 
-
-	if(isset($_POST["logout"]))
-	{
-	session_destroy();
-	echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
-	}
-
+	include("BackendHeader.php"); 
 ?>
 
 <!DOCTYPE html>
@@ -251,7 +242,9 @@
 
         </Main>
 
-        
+        <!-- Footer -->
+        <?php include("footer.php"); ?>
+
         <!--Bootstrap CDN-->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">

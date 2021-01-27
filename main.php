@@ -177,8 +177,8 @@
 
 </section>
 
-<!-- Footer -->
-<?php include("footer.php"); ?>
+    <!-- Footer -->
+    <?php include("footer.php"); ?>
 
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
