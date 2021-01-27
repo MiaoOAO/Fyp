@@ -37,22 +37,69 @@
 ?>
 
 <!-------------------------------------------------------------------------------->
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>Shop cart</title>
 
-<?php
+			<meta name=”viewport” content=”width=device-width, initial-scale=1″ />
 
-$sql = "UPDATE payment_info SET pay_status=1 WHERE pay_id = ".$_COOKIE['pay_id'].";";
-$result = mysqli_query($conn, $sql);
+			<!-- Bootstrap CDN -->
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		
 
-if($result){
-	echo "<br>";
-    echo "<br>";
-	echo "PAYMENT HAVE PROCESS SUCESSFULLY! THANK YOU! HAVE A NICE DAY!!";
-	
-	echo "<a href='UserOrderLastProcess21(test).php'>Click here to see order information.</a>";
-	
-}else{
-	echo "You have to pay first!";
-}
+			<!--Font Awesome SDN-->
+			<script src="https://kit.fontawesome.com/5953284528.js" crossorigin="anonymous"></script>
+
+			<!--Slick Slider-->
+			<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+			<!--Custom Stylesheet -->
+			<link rel="stylesheet" href="./css/style,footer,header,navbar.css">
+			<link rel="stylesheet" href="./css/allPages-style.css">
+
+			<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+		<style>
+			.output-sucess{
+				font-size: 2rem;
+				font-family:var(--Montserrat);
+				top: 50%;
+			}
+
+			.output-sucess span{
+				color: var(--title-red);
+			}
+		</style>
 
 
-?>
+	</head>
+
+<!-- background image -->
+    <div class="bg-image">
+        <img src="./assets/9.jpg" alt="">
+    </div>  
+
+	<div class="container output-sucess"> 
+        <div class="row col-md-12 ">
+			<?php
+
+			$sql = "UPDATE payment_info SET pay_status=1 WHERE pay_id = ".$_COOKIE['pay_id'].";";
+			$result = mysqli_query($conn, $sql);
+
+			if($result){
+				echo "PAYMENT HAVE PROCESS ><span> SUCESSFULLY! </span> THANK YOU! HAVE A NICE DAY!!";
+				echo "<a href='UserOrderLastProcess21(test).php'>Click here to see order information.</a>";
+				
+			}else{
+				echo "You have to pay first!";
+			}
+			?>	
+		</div>	
+	</div>
+
+
+</html>
+<!--JS (from bootstrap) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>

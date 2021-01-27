@@ -51,6 +51,25 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 	<meta charset="utf-8">
 	<title>Shop cart</title>
 
+	 <meta name=”viewport” content=”width=device-width, initial-scale=1″ />
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+ 
+
+    <!--Font Awesome SDN-->
+    <script src="https://kit.fontawesome.com/5953284528.js" crossorigin="anonymous"></script>
+
+    <!--Slick Slider-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!--Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/style,footer,header,navbar.css">
+    <link rel="stylesheet" href="./css/allPages-style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
 
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -100,31 +119,53 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 		th,td{
 			padding: 15px;
 			text-align: left;
+			font-family:var(--Open);
 		}
 
 		tr:nth-child(even) {background-color: #f2f2f2;}
 
 		th {
-			background-color: #4CAF50;
+			height: 70px;
+			text-align: center;
+			background-color: var(--title-dark) ;
 			color: white;
+			font-size: 22px;
+			font-family:var(--Fraunces);
 		}
 
 		.container{
 			margin-top:3rem;
 		}
 
-		.cart-detail{
+		.cart-detail h1{
+			text-align: center;
+			font-weight: 300;
+			font-size: 42px;
+			color: var(--title-red);
+			letter-spacing: -2px;
+            margin: 2rem auto;
+            font-family:var(--Libre);
 		
 			
 		}
 
 		.cart-detail table{
 			overflow-x:auto;
+			background:rgb(248, 249, 249, 0.5);
 
 		}
 
 		.pay-detail{
 			margin-top:3rem;
+		}
+
+		.pay-detail h2{
+			font-weight: 300;
+			font-size: 32px;
+			color: var(--title-red);
+			letter-spacing: -2px;
+            margin: 1rem auto;
+            font-family:var(--Libre);
 		}
 
 		.pay-method{
@@ -140,12 +181,23 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 			
 		}
 
+		.pay-method h2{
+			font-weight: 300;
+			font-size: 32px;
+			color: var(--title-red);
+			letter-spacing: -2px;
+            margin: 1rem auto;
+            font-family:var(--Libre);
+		}
+
 		.pay-method p {
 			margin-left: 12px ;
+			font-family:var(--Open);
 		}
 
 		.pay-method h5 {
 			margin-left: 12px ;
+			font-family:var(--Fraunces);
 		}
 
 		.pay-method input[type=radio]{
@@ -160,12 +212,12 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 		}
 
 		.pay-method input[type=submit]{
-			background-color: #4CAF50;
-			color: white;
-			padding: 12px 20px;
-			border: none;
-			border-radius: 4px;
-			width: 187px;
+			background-color: var(--btn-red);
+		    color: var(--q);
+		    padding: 12px 20px;
+		    border-radius: 4px;
+            border-radius: 21px;
+			width:100%;
 			margin-top:1rem;
 		}
 
@@ -191,7 +243,20 @@ echo 'You have been logged out. <a href="UserLogin10.php">Go back</a>';
 
 </head>
 
+
+	<!-- background image -->
+    <div class="bg-image">
+        <img src="./assets/9.jpg" alt="">
+    </div>  
+
+  
+
+   
+	
 	<body>
+
+
+
 
 		<div class="container cart-detail"> 
             <div class="row col-md-12 ">

@@ -76,6 +76,12 @@
 
 			.shop-cart h1{
 				text-align: center;
+				font-weight: 300;
+				font-size: 52px;
+				color: var(--title-red);
+				letter-spacing: -2px;
+            	margin-top: 1rem;
+            	font-family:var(--Libre);
 			}
 
 			.shop-cart table {
@@ -89,13 +95,15 @@
 			.shop-cart th{
 				height: 70px;
 				text-align: center;
-				background-color: #F39C12 ;
+				background-color: var(--title-dark) ;
 				color: white;
 				font-size: 22px;
+				font-family:var(--Fraunces);
 			}
 
 			.shop-cart th,td{
 				padding: 15px;
+				font-family:var(--Open);
 			}
 
 			tr:hover {
@@ -131,7 +139,7 @@
 		</style>
 	</head>
 
-	 <!-- background image -->
+	<!-- background image -->
     <div class="bg-image">
         <img src="./assets/9.jpg" alt="">
     </div>  
