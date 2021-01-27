@@ -1,6 +1,7 @@
 <?php 
 	include("DataConnection1.php"); 
 	session_start();
+	ob_start();
 
 	if(isset( $_SESSION [ 'uname' ]) && ! empty ( $_SESSION [ 'uname' ])) 
 	{

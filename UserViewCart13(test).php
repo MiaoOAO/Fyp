@@ -355,7 +355,7 @@
 							<div class="total-price">	
 								<?php
 										echo "".$totalItem."   Items. ";
-										echo "Total prize: ".$totalPrice." MYR";
+										echo "Total price: ".$totalPrice." MYR";
 									?>
 							</div>
 						</div>	
