@@ -4,6 +4,7 @@ $username = "root";
 $password = "";
 $database = "fyptest2";
 
+ob_start();
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database);
