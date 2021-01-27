@@ -79,11 +79,11 @@
 				color: black;
 			}
 
-			input[type="submit"]{
+			.pay-btn button{
 				background-color: var(--btn-red);
 				color: white;
 				border: none;
-				padding: 6px 20px;
+				padding: 10px 20px;
             	border-radius: 4px;
             	border-radius: 21px;
 				float:right;
@@ -212,8 +212,8 @@
 					<?php
 						//print_r($_COOKIE['shipment_status']);
 						?>
-						<div class="pay">
-							<button type="button" class="btn"><a href='UserPayInfo18(test).php'>Click here to pay</a></button>
+						<div class="pay-btn">
+							<button type="button" ><a href='UserPayInfo18(test).php'>Click here to pay</a></button>
 						</div>
 						<?php
 					}
