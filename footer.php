@@ -2,7 +2,7 @@
         <div class="container text-center text-md-left">
             <div class="row col-md-12">
                 <div class="col-md-4 mx-auto">
-                    <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Logo(name)</h3>
+                    <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Logo(name)test</h3>
                     <p>We are provide a variety of snacks and drinks from different countries for you to buy.<br><br>
                     MALAYSIA</p>
                 </div>
