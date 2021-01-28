@@ -1,3 +1,8 @@
+
+<style>
+    
+    </style>
+
 <div id="headerNav">
         <nav class="navbar navbar-expand-lg navbar-light" >
             <a class="navbar-brand" href="main.php"><span style="color:rgb(11, 211, 238); text-decoration:overline black; font-size: 40px; font-family:Jazz LET, fantasy ;">F<span style="color: rgba(233, 76, 76, 0.959)">u</span>n_Snacks
@@ -26,12 +31,13 @@
                         
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SHOPPING CART</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="UserViewCart13(test).php">View cart</a>
+                            <a class="dropdown-item" href="UserPayInfo18(test).php">Purchase order</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="UserOrderRecord22(test).php">Purchase history</a>
                         </div>
                     </li>
+                    
 
                 </ul>
 

@@ -120,7 +120,6 @@
     .nav-item a{
         color: var(--title-dark) !important; 
         font-size: 1.3rem;
-        margin-left:1rem;
         font-family: var(--Open); 
         
     }
@@ -130,8 +129,13 @@
         font-weight: bolder;
     }
     .dropdown .dropdown-menu{
-        background-color:black !important;
+        background-color: var(--white) !important;
         
+    }
+
+    .dropdown {
+        background-color: var(--white) !important;
+
     }
 
     .user-register, .user-login{
@@ -158,6 +162,13 @@
         border-radius: 21px;
 
     }
+
+
+
+
+
+
+
 
 /* title */
     .page-title{
