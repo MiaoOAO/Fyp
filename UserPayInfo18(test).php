@@ -28,10 +28,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
-
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
 		<style>
 		/** 
 			.ship-address h1{
@@ -92,7 +88,7 @@
 		}
 
 		.container{
-			margin-top:3rem;
+			margin-top:6rem;
 		}
 
 		.cart-detail h1{
@@ -102,7 +98,8 @@
 			color: var(--title-red);
 			letter-spacing: -2px;
             margin: 2rem auto;
-            font-family:var(--Libre);
+			font-family:var(--Libre);
+			text-shadow: 2px 2px var(--title-dark);
 		
 			
 		}
@@ -123,7 +120,8 @@
 			color: var(--title-red);
 			letter-spacing: -2px;
             margin: 1rem auto;
-            font-family:var(--Libre);
+			font-family:var(--Libre);
+			text-shadow: 2px 2px var(--title-dark);
 		}
 
 		.pay-method{
@@ -145,7 +143,8 @@
 			color: var(--title-red);
 			letter-spacing: -2px;
             margin: 1rem auto;
-            font-family:var(--Libre);
+			font-family:var(--Libre);
+			text-shadow: 2px 2px var(--white);
 		}
 
 		.pay-method p {
@@ -207,9 +206,20 @@
         <img src="./assets/9.jpg" alt="">
     </div>  
 
-  
+	<!-- icon bar-->
+    <div class="icon-bar">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+    </div>
 
-   
+    <!-- up button-->
+    <div class="up" style="position: fixed; bottom: 0; right: 0; z-index: 1;">
+        <a href="#"><img src="https://img.icons8.com/clouds/100/000000/up.png"></a>
+    </div>
+    
+    <!-- header -->
+    <?php include("header.php"); ?>
 	
 	<body>
 

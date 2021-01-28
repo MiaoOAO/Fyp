@@ -171,7 +171,7 @@
             <p>
                 Don't know which one to choose?<br>Please feel free to contact us to get more new products information
             </p>
-            <a href="#"><button type="button" class="btn btn-secondary button"><span>Contact Us
+            <a href="contact_us.php"><button type="button" class="btn btn-secondary button"><span>Contact Us
                     </span></button></a>
 
 

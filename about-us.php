@@ -35,92 +35,11 @@
     <link rel="stylesheet" href="./css/allPages-style.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+    <link rel="stylesheet" href="./css/contactus.css">
 
     <style>
-
         .carousel-item img{
             height:80vh;
-        }
-
-        #contact .row img {
-            width: 200px;
-        }
-
-        #contact {
-            box-shadow: 1px 1px 2px black,
-                0 0 25px orangered,
-                0 0 5px darkblue;
-            padding: 3.5rem;
-            background-color: rgb(211, 211, 211, 0.7);
-        }
-
-
-        #contact .row p {
-            font-size: 1.3rem;
-            margin: 0.5rem;
-            font-weight: bolder;
-            font-family: var(--roboto);
-        }
-
-        #contact .row h3 {
-            font-size: 2.5rem;
-            color: orangered;
-            text-shadow: 2px 2px 4px #000000;
-            font-weight: bolder;
-            font-family: var(--abril);
-        }
-
-        #contact .row h4 {
-            font-size: 1.5rem;
-            color: tomato;
-            margin-top: 1.2rem;
-            margin-bottom: 0px;
-            font-weight: bolder;
-            font-family: var(--sriracha);
-        }
-
-
-        .title-map h3 {
-            text-align: center;
-            font-size: 3rem;
-            background-color: tomato;
-            margin-bottom: 1rem;
-            padding: 2rem;
-            text-shadow: 2px 2px 4px #000000;
-            color: white;
-            font-family: var(--abril);
-        }
-
-        .location {
-            padding-top: 3rem;
-            text-align: center;
-            height: 80vh;
-        }
-
-        .location a {
-            text-decoration: none;
-            color: tomato;
-            font-size: 1.5rem;
-        }
-
-        .location a:hover {
-            text-decoration: none;
-            color: orangered;
-            text-shadow: 2px 2px 4px #000000;
-        }
-
-        #map_canvas iframe {
-            width: 600px;
-            height: 450px;
-        }
-
-
-        @media only screen and (max-width: 769px) {
-            #map_canvas iframe {
-                width: 350px;
-                height: 450px;
-            }
         }
     </style>
 
@@ -189,60 +108,59 @@
     </div>
 
      <div class="page-title">
-            <p>Contact Us</p>
+            <p>About Us</p>
     </div>
 
         <br><br>
-    <section id="contact" data-aos="fade-up">
-            <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="/assets/4.jpg" alt="out">
-                </div>
-                <div class="col-md-6 text-left">
-                    <h3>Name company</h3>
-                    <p>(905172D)</p>
-                    <p>address.</p>
+    <div class="container">
+                <section class="card" data-aos="fade-left">
+                    <img src="/assets/grey.png" alt="">
+                    <div>
+                        <h3>Quality Service</h3>
+                        <p></p>
+                        <a href="#" class="btn">View Now</a>
+                    </div>
+                </section>
 
-                    <h4>OFFICE No:</h4>
-                    <p>03-8051 4888/012-455 6376</p>
+                <section class="card" data-aos="fade-right">
+                    <img src="/assets/grey.png" alt="">
+                    <div>
+                        <h3>Colour Matching</h3>
+                        <p>
+                            <p></P>
+                        </p>
+                        <a href="#" class="btn">View Now</a>
+                    </div>
+                </section>
 
-                    <h4>FAX No :</h4>
-                    <p>03-8051 4888</p>
 
-                    <h4>EMAIL :</h4>
-                    <p>@gmail.com</p>
 
-                    <h4>Business Hours:</h4>
-                    <p>Monday - Friday : 10a.m. - 6.00p.m.</p>
-                    <p> Saturday : 9.30a.m. - 4.00p.m.</p>
-                    <p>Sunday & P.Holiday : Closed</p>
-                </div>
-            </div>
-        </section>
-        <br>
+                <section class="card" data-aos="fade-left">
+                    <img src="/assets/grey.png" alt="">
+                    <div>
+                        <h3>Color Matching Experts</h3>
+                        <p></p>
+                        <a href="#" class="btn">View Now</a>
+                    </div>
+                </section>
 
-        <!--
-        <div class="title-map" data-aos="flip-up">
-            <h3>MAP</h3>
-        </div>
-        <div class="location" data-aos="fade-up">
-            <div id="map_canvas">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.358098978865!2d101.60584011475697!3d2.9978902978166913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb379262c77ff%3A0xb603bc89ea2ff3b1!2sWah%20Hin%20Paint%20Sdn.%20Bhd.!5e0!3m2!1szh-CN!2smy!4v1590072680486!5m2!1szh-CN!2smy"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                <br>
-                <a href="https://www.google.com/search?q=Wah+Hin+Paint+Sdn.+Bhd&oq=Wah+Hin+Paint+Sdn.+Bhd&aqs=chrome..69i57j35i39j0j69i59l2j69i60j69i61l2.1136j0j7&sourceid=chrome&ie=UTF-8"
-                    target="blank">Click
-                    here to search Google</a>
-                <br>
-            </div>
-        </div>-->
+
+
+                <section class="card" data-aos="fade-right">
+                    <img src="/assets/grey.png" alt="">
+                    <div>
+                        <h3>Provide Aadvice</h3>
+                        <p></p>
+                        <a href="#" class="btn">View Now</a>
+                    </div>
+                </section>
+</Main>
 
     <!-- Footer -->
     <?php include("footer.php"); ?>
 
 
-    </Main>
+    
 
      <!--JS (from bootstrap) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

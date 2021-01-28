@@ -174,7 +174,6 @@
         .ctn {
             background:rgb(248, 249, 249, 0.5 );
             padding: 1%;
-           
             
         }
         .ctn .btn{
@@ -218,7 +217,7 @@
         .product-recommend{
                 width:100%;
                 height:400px;
-                margin-bottom: 40px;
+                margin: 40px auto;
                 border: 1px solid black;
                 position:static;
         }
@@ -228,6 +227,7 @@
             font-family: var(--Fraunces);
             color:var(--title-red);
             font-size: 4rem;
+            text-shadow: 2px 2px var(--title-dark);
             
             
         }
@@ -498,7 +498,7 @@
 
         .product{
 			width:100vw;
-            margin-top: 100px;
+            margin-top: 150px;
             margin-bottom: 100px;
             padding:30px 30px ;
             background:rgb(248, 249, 249, 0.5);
