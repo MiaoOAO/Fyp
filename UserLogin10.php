@@ -31,6 +31,7 @@ session_start(); ?>
 		    border-radius: 4px;
 		    width: 100%;
             border-radius: 21px;
+            margin-bottom:15px;
         }
 
         .login h1{
@@ -82,29 +83,35 @@ session_start(); ?>
         <a href="#"><img src="https://img.icons8.com/clouds/100/000000/up.png"></a>
     </div>
 
+<!-- header -->
+    <?php include("header.php"); ?>
 
 	<body>
+        <br><br>
+        <br><br>
         <br><br>
         
         <div class="container text-center text-md-left" data-aos="fade-left">
             <div class="row col-md-12">
                 <div class="col-md-6  p-lg-5 mx-auto my-5 login">
-                    <h1>User Login</h1>
+                    <h1>User  Login</h1>
                 
                     <form action="UserLogin10.php" method="post">
 
                     <div class="form-group">
-                        <label for="exampleInputEmail1">User name</label>
+                        <label >User name</label>
                         <input type="text" name="user_username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
                         <small id="textHelp" class="form-text text-muted">We'll never share your details with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputPassword1">User password</label>
+                        <label >User password</label>
                         <input type="password" name="user_password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                     </div>
         
 
                         <input type="submit" class = "button" name="submit" value="Login">
+
+                        <label >New member? <a href="UserRegister9.php">REGISTER NOW</a> here.</label>
                     </form>
                 </div>
             </div>

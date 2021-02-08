@@ -129,12 +129,12 @@
         font-weight: bolder;
     }
     .dropdown .dropdown-menu{
-        background-color: var(--white) !important;
+       /*   background-color: var(--white) !important; */
         
     }
 
     .dropdown {
-        background-color: var(--white) !important;
+      /*   background-color: var(--white) !important; */
 
     }
 

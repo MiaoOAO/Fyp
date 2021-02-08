@@ -74,7 +74,15 @@
 
     <title>Registration User Account</title>
 
+<!-- header -->
+    <?php include("header.php"); ?>
+
+
 <body>
+
+    <br><br>
+    <br><br>
+    <br><br>
 		
 	<div class="container text-center text-md-left">
         <div class="row col-md-12">
