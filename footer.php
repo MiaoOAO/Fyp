@@ -11,30 +11,30 @@
                     <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h3>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="features.php">FEATURES</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="products">PRODUCTS</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="contact_us.php">CONTACT US</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="about-us.php">ABOUT US</a>
                         </li>
                     </ul>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="#!">Link 1</a>
+                            <a href="UserViewCart13(test).php">View cart</a>
                         </li>
                         <li>
-                            <a href="#!">Link 2</a>
+                            <a href="UserPayInfo18(test).php">Purchase order</a>
                         </li>
                         <li>
-                            <a href="#!">Link 3</a>
+                            <a href="UserOrderRecord22(test).php">Purchase history</a>
                         </li>
                         <li>
-                            <a href="#!">Link 4</a>
+                            <a href="#!"></a>
                         </li>
                     </ul>
                 </div>

@@ -105,9 +105,9 @@
         
         <div id="headline">
             <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 font-weight-normal">Punny headline</h1>
-                <p class="lead font-weight-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-                <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+                <h1 class="display-4 font-weight-normal">Shopping Now!!!</h1>
+                <p class="lead font-weight-normal">We provide a guaranteed delivery service, just click and pay, and your favorite snacks and drinks will be delivered to your door.</p>
+                <a class="btn btn-outline-secondary" href="products.php">Get Start</a>
             </div>
         </div>
 

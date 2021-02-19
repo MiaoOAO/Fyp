@@ -115,7 +115,7 @@
             <h1><span>Key </span>
                 Features</h1>
             <p>
-                If you want to experience the feeling of going abroad during the epidemic.<br>You need to get local snacjs from various countries</p>
+                If you want to experience the feeling of going abroad during the pandemic.<br> You can try get local snacks from various countries.</p>
         </header>
         <div class="bg-image">
             <img src="./assets/feature.jpg" alt="">
@@ -165,12 +165,12 @@
                                     HONG KONG,
                                     , etc.,</span></h3>
                             <h3>
-                                <ul>
+                                <ul><p><u>TYPE</u></P>
                                     <li>Potato chips</li>
                                     <li>Popcorn</li>
                                     <li>Soft drink</li>
                                     <li>Cookie</li>
-                                    <li></li>
+                                    <li>Candy</li>
                                 </ul>
                             </h3>
                             <a href="/products.html"><button type="button" class="btn btn-secondary button"><span> More
@@ -189,10 +189,11 @@
                 <section class="card" data-aos="fade-left">
                     <img src="/assets/colour-car.jpg " alt="">
                     <div>
-                        <h3>Services</h3>
+                        <h3>Delivery Services</h3>
                         <p>
-                           </p>
-                        <a href="#" class="btn">View Now</a>
+                        You do not need to worry about issues such as driving to the supermarket, this is because our website has provided delivery service for your.
+                        </p>
+                        <a href="#" class="btn">Shop Now</a>
                     </div>
                 </section>
 
@@ -201,9 +202,9 @@
                     <div>
                         <h3>About Us</h3>
                         <p>
-                           
+                        The online procurement service platform, collector variety of snacks and drinks from different countries for your to buy.
                         </p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="#" class="btn">More Info</a>
                     </div>
                 </section>
 
@@ -212,12 +213,12 @@
                     <div>
                         <h3>Contact Us</h3>
                         <p>
-
+                            We provide 24/7 online help to answer your questions and technical assistance. Please feel free to contact us if you have any questions.
                         </p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="#" class="btn">Contact Now</a>
                     </div>
                 </section>
-            </div>-->
+            </div>
             <br><br><br><br><br>
 
             <section id="brands">
