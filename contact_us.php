@@ -80,7 +80,7 @@
             font-family: var(--sriracha);
         }
 
-
+      
         .title-map h3 {
             text-align: center;
             font-size: 3rem;
@@ -95,7 +95,7 @@
         .location {
             padding-top: 3rem;
             text-align: center;
-            height: 80vh;
+            height: ;
         }
 
         .location a {
@@ -109,10 +109,24 @@
             color: orangered;
             text-shadow: 2px 2px 4px #000000;
         }
+         .location span {
+            color: var(--btn-red);
+
+        }
+        .location p{
+            margin:50px;
+            font-size: 1.1rem;
+            color: var(--title-dark);
+            font-family: var(--Libre);
+        }
 
         #map_canvas iframe {
             width: 600px;
             height: 450px;
+        }
+
+        #map_canvas{
+            position : static;
         }
 
 
@@ -120,6 +134,11 @@
             #map_canvas iframe {
                 width: 350px;
                 height: 450px;
+            }
+
+             .location {
+                position : static;
+                height: 1100px;
             }
         }
     </style>
@@ -199,44 +218,44 @@
                     <img src="/assets/4.jpg" alt="out">
                 </div>
                 <div class="col-md-6 text-left">
-                    <h3>Name company</h3>
+                    <h3>Fun_Snacks</h3>
                     <p>(905172D)</p>
-                    <p>address.</p>
+                    <p>20, Jalan 7/1, Serdang Jaya, Seri Kembangan, Selangor.(Office)</p>
 
                     <h4>OFFICE No:</h4>
-                    <p>03-8051 4888/012-455 6376</p>
+                    <p>03-1234 5566/012-411 9219</p>
 
                     <h4>FAX No :</h4>
-                    <p>03-8051 4888</p>
+                    <p>03-1234 5566</p>
 
                     <h4>EMAIL :</h4>
-                    <p>@gmail.com</p>
+                    <p>wearefunsnacks@gmail.com</p>
 
                     <h4>Business Hours:</h4>
-                    <p>Monday - Friday : 10a.m. - 6.00p.m.</p>
-                    <p> Saturday : 9.30a.m. - 4.00p.m.</p>
+                    <p>Monday - Friday : 10.00a.m. - 6.00p.m.</p>
+                    <p> Saturday : 10.00a.m. - 4.00p.m.</p>
                     <p>Sunday & P.Holiday : Closed</p>
                 </div>
             </div>
         </section>
         <br>
 
-        <!--
+        
         <div class="title-map" data-aos="flip-up">
             <h3>MAP</h3>
         </div>
         <div class="location" data-aos="fade-up">
             <div id="map_canvas">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.358098978865!2d101.60584011475697!3d2.9978902978166913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdb379262c77ff%3A0xb603bc89ea2ff3b1!2sWah%20Hin%20Paint%20Sdn.%20Bhd.!5e0!3m2!1szh-CN!2smy!4v1590072680486!5m2!1szh-CN!2smy"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7968.543928495288!2d101.713567!3d3.021449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdcaa43353c227%3A0x4e811b580192f169!2s23%2C%20Jalan%207%2F1%2C%20Serdang%20Jaya%2C%2043300%20Seri%20Kembangan%2C%20Selangor!5e0!3m2!1szh-CN!2smy!4v1613898615829!5m2!1szh-CN!2smy" 
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1613898996541!6m8!1m7!1se2nsZSvzcORtad9_eGSUgA!2m2!1d3.01452372592796!2d101.7394439708906!3f278.9622036530888!4f-18.340948042531267!5f0.7820865974627469" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+     
                 <br>
-                <a href="https://www.google.com/search?q=Wah+Hin+Paint+Sdn.+Bhd&oq=Wah+Hin+Paint+Sdn.+Bhd&aqs=chrome..69i57j35i39j0j69i59l2j69i60j69i61l2.1136j0j7&sourceid=chrome&ie=UTF-8"
-                    target="blank">Click
-                    here to search Google</a>
+                <p>We do not have a <span>local physical store</span>. <br> If you have any questions, you can contact our customer service or come to our office. </p>
                 <br>
             </div>
-        </div>-->
+        </div>
 
     <!-- Footer -->
     <?php include("footer.php"); ?>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Comatible" content="ie=edge">
-    <title>WahHin-FEATURES</title>
+    <title>FEATURES</title>
 
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -117,9 +117,7 @@
             <p>
                 If you want to experience the feeling of going abroad during the pandemic.<br> You can try get local snacks from various countries.</p>
         </header>
-        <div class="bg-image">
-            <img src="./assets/feature.jpg" alt="">
-        </div>
+    
 
 
         <main>
@@ -187,7 +185,7 @@
 
             <div class="container">
                 <section class="card" data-aos="fade-left">
-                    <img src="/assets/colour-car.jpg " alt="">
+                    <img src="./assets/5.jpg " alt="">
                     <div>
                         <h3>Delivery Services</h3>
                         <p>
@@ -198,7 +196,7 @@
                 </section>
 
                 <section class="card" data-aos="fade-right">
-                    <img src="/assets/f-3.jpg" alt="">
+                    <img src="./assets/0.jpg" alt="">
                     <div>
                         <h3>About Us</h3>
                         <p>
@@ -209,7 +207,7 @@
                 </section>
 
                 <section class="card" data-aos="fade-left">
-                    <img src="/assets/f-7.jpg" alt="">
+                    <img src="./assets/2.jpg" alt="">
                     <div>
                         <h3>Contact Us</h3>
                         <p>

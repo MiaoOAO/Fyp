@@ -144,8 +144,8 @@
         .contact p {
 
             font-size: 2rem;
-            color: var(--white);
-            font-family: var(--Open);
+          color: var(--title-dark);
+          font-family: var(--Libre);
         }
 
         .contact button {
@@ -336,10 +336,11 @@
 
             font-size: 2rem;
             color: white;
+            font-family: var(--Libre);
         }
 
         #one {
-            background: url(/assets/f-5.jpg);
+            background:rgba(233, 233, 233, 0.781);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -422,12 +423,12 @@
         .card h3 {
             margin-bottom: 2rem;
             color: tomato;
-            font-family: var(--abril);
+            font-family: var(--Fraunces);
 
         }
 
         .card p {
-            font-family: var(--roboto);
+            font-family: var(--Open);
         }
 
         .card img {
@@ -589,5 +590,44 @@
             width:100%;
         }
 
+/**about**/
+        .about {
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 7rem;
+            margin-bottom: 7rem;
+        }
 
+        .about h2 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+            font-family: var(--Fraunces);
+
+        }
+
+        .about h2 span {
+            color: var(--btn-red);
+
+        }
+
+        .about {
+
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        .about p {
+
+            font-size: 2rem;
+            color: var(--title-dark);
+            font-family: var(--Libre);
+        }
+
+/**about**/
 
