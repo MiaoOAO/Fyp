@@ -175,24 +175,24 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="UserProductList11(test).php"><img src="./assets/7.jpg" class="d-block w-100" ></a>
+                    <a href="products.php"><img src="./assets/slide-2.jpg" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h5>Snacks and Drinks?</h5>
+                        <p>Collect from different countries to you choice.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/6.jpg" class="d-block w-100" >
+                    <a href="features.php"><img src="./assets/slide-3.png" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5>What About Us?</h5>
+                        <p>A Online Procurement Service Platform.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/8.jpg" class="d-block w-100" >
+                    <a href="about-us.php"><img src="./assets/slide-5.jpg" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h5>Features?</h5>
+                        <p>Product come from MALAYSIA, CHINA, TAIWAN, JAPAN, KOREA, HONG KONG, etc</p>
                     </div>
                 </div>
             </div>

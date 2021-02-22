@@ -69,24 +69,24 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <a href="UserProductList11(test).php"><img src="./assets/7.jpg" class="d-block w-100" ></a>
+                    <a href="products.php"><img src="./assets/slide-2.jpg" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h5>Snacks and Drinks?</h5>
+                        <p>Collect from different countries to you choice.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/6.jpg" class="d-block w-100" >
+                    <a href="features.php"><img src="./assets/slide-3.png" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5>What About Us?</h5>
+                        <p>A Online Procurement Service Platform.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/8.jpg" class="d-block w-100" >
+                    <a href="about-us.php"><img src="./assets/slide-5.jpg" class="d-block w-100" ></a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h5>Features?</h5>
+                        <p>Product come from MALAYSIA, CHINA, TAIWAN, JAPAN, KOREA, HONG KONG, etc</p>
                     </div>
                 </div>
             </div>
@@ -122,18 +122,18 @@
             <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" style="background-color:coral" data-aos="fade-down-right" >
 
                 <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+                    <h2 class="display-5">Globalization Products</h2>
+                    <p class="lead">Collect from different countries.</p>
                 </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="https://www.jing.fm/clipimg/full/55-555204_country-clipart-international-flag-all-countries-flag-png.png"class="d-block w-100 h-100" style= "background-size: cover;" >></a></div>
+                <div class="bg-light shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="./assets/main-2-global.gif"class="d-block w-100 h-100" style= "background-size: cover;" ></a></div>
             </div>
 
             <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color:mediumseagreen" data-aos="fade-down-left">
                 <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+                    <h2 class="display-5">Any Type of Snacks</h2>
+                    <p class="lead">Potato chip, chocolate bar, cookies, and more...</p>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="https://thumbor.thedailymeal.com/psZG-7YiSzXxVgLPYReCDSOcagM=/870x565/https://www.thedailymeal.com/sites/default/files/slideshows/1708012/2085079/iStock-458463905.jpg" class="d-block w-100 h-100" style= "background-size: cover;"></a>
+                <div class="bg-dark shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="./assets/main-2-snacks.jpg" class="d-block w-100 h-100" style= "background-size: cover;"></a>
                 </div>
             </div>
         </div>
@@ -143,29 +143,30 @@
 
             <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style="background-color:darkturquoise" data-aos="fade-up-right">
                 <div class="my-3 p-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+                    <h2 class="display-5">Any Type of Drinks</h2>
+                    <p class="lead">Soft drink, tea, yogurt, soft drink, and more...</p>
                 </div>
-                <div class="bg-dark shadow-sm mx-auto" style=" width: 90%; height: 300px;border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wh-snacks-week-snack-roundup-1571260658.jpg" class="d-block w-100 h-100" style= "background-size: cover;"></a>
+                <div class="bg-dark shadow-sm mx-auto" style=" width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="./assets/main-2-drinks.jpg" class="d-block w-100 h-100" style= "background-size: cover;"></a>
                 </div>
             </div>
 
             <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" data-aos="fade-up-left">
                 <div class="my-3 py-3">
-                    <h2 class="display-5">Another headline</h2>
-                    <p class="lead">And an even wittier subheading.</p>
+                    <h2 class="display-5">Delivery service</h2>
+                    <p class="lead">We provide a 14 days product return policy.</p>
                 </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/wh-snacks-week-snack-roundup-1571260658.jpg" class="d-block w-100 h-100" style= "background-size: cover;"></a></div>
+                <div class="bg-light shadow-sm mx-auto" style="width: 90%; height: 300px; border-radius: 21px 21px 0 0;"><a href="#" target="_blank"><img src="./assets/main-2-delivary.gif" class="d-block w-100 h-100" style= "background-size: cover;"></a></div>
             </div>
         </div>
     </div>
     </div>
 
 <section class="c ">
-     <img src="assets/7.jpg" style="width:100%; height:100%;">
+    <img src="./assets/slide-4.jpg" style="width:100%; height:100%;">
 </section>
 
 <section class="contact">
+    
             <h2><span>LOOKING FOR A SNACKS?<br><br></span>
                 WE</h2>
             <p>
