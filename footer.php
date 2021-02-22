@@ -41,11 +41,11 @@
                 <!--<hr class="clearfix w-100 d-md-none">-->
                 <div class="col-md-5 mx-auto">    
                     <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Contact Us</h3>
-                    <h6><i class="fas fa-map-marker-alt"></i> : ---
+                    <h6><i class="fas fa-map-marker-alt"></i> : 20, Jalan 7/1, Serdang Jaya, Seri Kembangan, Selangor.(Office)
                     </h6>
-                    <h6><i class="fas fa-phone"></i> : 03- ---- ----/012- --- ----</h6>
+                    <h6><i class="fas fa-phone"></i> : 03-1234 5566/012-411 9219</h6>
                     <h6><i class="far fa-envelope"></i> : <a
-                            href="mailto:josephsim0501@gmail.com">---</a></h6><br>
+                            href="mailto:josephsim0501@gmail.com">wearefunsnacks@gmail.com</a></h6><br>
                     <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Business Hours</h3>
                     <h6> Monday - Friday : 10.00a.m. - 6.00p.m.<br>
                         Saturday : 10.00a.m. - 4.00p.m.<br>

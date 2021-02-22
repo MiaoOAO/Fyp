@@ -44,7 +44,7 @@
         }
 
         #contact .row img {
-            width: 200px;
+            width: 100%;
         }
 
         #contact {
@@ -215,7 +215,7 @@
     <section id="contact" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="/assets/4.jpg" alt="out">
+                    <img src="./assets/contact-img.jpg" alt="out">
                 </div>
                 <div class="col-md-6 text-left">
                     <h3>Fun_Snacks</h3>

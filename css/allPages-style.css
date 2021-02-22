@@ -12,7 +12,7 @@
 /*main*/
     
         .carousel-inner h5{
-            color: var(--title-red) !important; 
+            color: var(--white) !important; 
         }
         .carousel-inner p{
             color: var(--title-dark) !important; 
@@ -434,6 +434,7 @@
 
         .card img {
             height: 400px;
+             width: 100%;
 
         }
 
@@ -462,6 +463,9 @@
         @media(max-width:700px) {
             .card {
                 display: block;
+            }
+            .card img{
+                 width: 100%;
             }
         }
 

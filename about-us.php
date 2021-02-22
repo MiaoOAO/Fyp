@@ -126,53 +126,53 @@
             </section>
 
                 <section class="card" data-aos="fade-right">
-                    <img src="/assets/grey.png" alt="">
+                    <img src="./assets/Quality_Assurance.png" alt="">
                     <div>
                         <h3>Quality Assurance</h3>
                         <p>We are selling authentic products and all the snacks and drinks we sell is through the public praise. Genuine guarantee, fake one lose four.</p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="product.php" class="btn">Shop Now</a>
                     </div>
                 </section>
 
                 <section class="card" data-aos="fade-left">
-                    <img src="/assets/grey.png" alt="">
+                    <img src="./assets/product-detail.jpg" alt="">
                     <div>
                         <h3>Product Details</h3>
                         <p>We are provide a complete detailed information of the product includes the production date, expiration date, country/region of production, flavor and product packaging size.</p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="product.php" class="btn">Shop Now</a>
                     </div>
                 </section>
 
                 <section class="card" data-aos="fade-right">
-                    <img src="/assets/grey.png" alt="">
+                    <img src="./assets/delivery.gif" alt="">
                     <div>
                         <h3>Delivery Services</h3>
                         <p>
                             You do not need to worry about issues such as driving to the supermarket, this is because our website has provided delivery service for your.
                         </p>
-                        <a href="#" class="btn">Shop Now</a>
+                        <a href="product.php" class="btn">Shop Now</a>
                     </div>
                 </section>
 
 
 
                 <section class="card" data-aos="fade-left">
-                    <img src="/assets/grey.png" alt="">
+                    <img src="./assets/Returns.jpg" alt="">
                     <div>
                         <h3>Product Returns</h3>
                         <p>We provide a 14 days product return policy. If the package was damaged during the express delivery process you can contact our customer service within 14 days. Need to comply with T&C.</p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="contact_us.php" class="btn">Contact Now</a>
                     </div>
                 </section>
 
 
 
                 <section class="card" data-aos="fade-right">
-                    <img src="/assets/grey.png" alt="">
+                    <img src="./assets/customer_service.gif" alt="">
                     <div>
                         <h3>Provide Advice</h3>
                         <p>Our products range from classic to popular, and there are local or overseas products from different countries. If you don’t know which snack is suitable for your taste, please contact us and we will advise you.</p>
-                        <a href="#" class="btn">View Now</a>
+                        <a href="contact_us.php" class="btn">Contact Now</a>
                     </div>
                 </section>
 </Main>
