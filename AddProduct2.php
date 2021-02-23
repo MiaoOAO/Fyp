@@ -114,6 +114,10 @@
     <label for="nh">Non-Halal</label>
     </p>
 
+    <p>Production Date:
+    <input type="date" name="production_date">
+    </p>
+
     <p>Expiry Date: 
                 <select name="product_expiry">
                     <option value="0-3">0-3</option>
@@ -130,7 +134,7 @@
         <textarea name="product_info" rows="4" cols="50"></textarea>
     </p>
 
-   <p> Select image to upload:<input type="file" name="image"/></p>
+    <p> Select image to upload:<input type="file" name="image"/></p>
 
     <input type="submit" name="submit" value="ADD PRODUCT"/>
 </form>
@@ -153,6 +157,7 @@ error_reporting(E_ERROR | E_PARSE); // use for hide warning
         $scountry = $_POST["product_country"];
         $flavor = $_POST["product_flavor"];
         $certification = $_POST["certification"];
+        $production = $_POST["production_date"];
         $expiry = $_POST["product_expiry"];
         $sinfo = $_POST["product_info"];
         $check = getimagesize($_FILES["image"]["tmp_name"]); //image upload
@@ -192,7 +197,7 @@ error_reporting(E_ERROR | E_PARSE); // use for hide warning
 
             else
             {
-                $insert = $conn->query("INSERT INTO productlist (s_id, s_name, s_price, s_quantity, s_country, s_flavor, s_certification, s_expiry, s_info, image, created) VALUES ('$sid', '$sname', $sprice, $squantity, '$scountry','$flavor','$certification', '$expiry', '$sinfo', '$imgContent', '$dataTime')");
+                $insert = $conn->query("INSERT INTO productlist (s_id, s_name, s_price, s_quantity, s_country, s_flavor, s_certification, s_production, s_expiry, s_info, image, created) VALUES ('$sid', '$sname', $sprice, $squantity, '$scountry','$flavor','$certification','$production', '$expiry', '$sinfo', '$imgContent', '$dataTime')");
             }
 
                 if($insert)

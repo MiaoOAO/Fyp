@@ -91,11 +91,10 @@
         <div class="row col-md-12 ">
 			<?php
 
-				$payWay = "credit";
+				$payWay = "Bank Receipt";
 				$payUser = $_POST['payuser'];
-				$payAccount = $_POST['payaccount'];
-				$receiveUser = $_POST['receiveuser'];
-				$securityCode = $_POST['securityCode'];
+				$payNote = $_POST['paynote'];	
+                $check = getimagesize($_FILES["image"]["tmp_name"]);			
 				$payStatus = false;
 
 				$numbers = range (1,1000000); 
@@ -104,17 +103,19 @@
 				$result = array_slice($numbers,0,$num); 
 				$pay_random = $result[0];
 
-				if($payUser == "" ||$payAccount == "" || $receiveUser == "" || $securityCode == "")
+				if($payUser == "" && $payNote == "" && $check == false )
 				{
 					echo "<p>You must fill the blanks.</p>";
 				}
 
 				else
 				{
+                $image = $_FILES['image']['tmp_name'];
+                $imgContent = addslashes(file_get_contents($image));
 				//	$sql = "INSERT INTO payment_info (pay_user, receive_user, pay_account, receive_account, pay_way, pay_status, pay_random)
 				//	VALUES ('".$payUser."', '".$receiveUser."', ".$payAccount.",".$receiveAccount.",'".$payWay."','".$payStatus."',".$pay_random.");";
 				//$conn->query("INSERT INTO payment_info (pay_user, receive_user, pay_account, receive_account, pay_way, pay_status, pay_random) VALUES ('$payUser', '$receiveUser', $payAccount, $receiveAccount, '$payWay', '$payStatus', $pay_random)");
-				$sql = "INSERT INTO payment_info (pay_user, receive_user, pay_account, security_code, pay_way, pay_status, pay_random) VALUES ('$payUser', '$receiveUser', $payAccount, $securityCode, '$payWay', '$payStatus', $pay_random)";
+				$sql = "INSERT INTO payment_info (pay_user, pay_way, pay_status, pay_random, image, pay_note) VALUES ('$payUser', '$payWay', '$payStatus', $pay_random, '$imgContent', '$payNote')";
 				$resultInfo = mysqli_query($conn, $sql);
 
 					if($resultInfo == 1)

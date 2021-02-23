@@ -146,7 +146,7 @@
 					echo "The shop cart is empty!";
 					?>
 						<br><br>
-						<a href='UserProductList11(test).php'>Back to Products List</a>
+						<a href='products.php'>Back to Products List</a>
 					<?php
 				}
 

@@ -364,35 +364,19 @@
 								<input type="radio" name="payway" value="credit" onClick="hideB()" checked>Credit/ Debit card
 								<input type="radio" name="payway" value="bank" onClick="hideA()">Bank Receipt
 							</div>
+
 							<form action="UserPayInfoWay19(test).php" method="post" id="A" style="position: absolute">
 
 								<h5>Name on card</h5><input type="text" name="payuser"><br>
 								<h5>Card Number</h5><input type="text" name="payaccount"><br>
 								<h5>Expiry Date</h5><input type="text" name="receiveuser"><br>
-								<h5>Card Security Code</h5><input type="text" name="receiveaccount"><br>
+								<h5>Card Security Code</h5><input type="text" name="securityCode"><br>
 								<input type="submit" value="Submit"> 
-									<!--
-										<table border = '1'>
-											<tr>
-												<th>Pay user</th>
-												<th>Pay account</th>
-												<th>Receive user</th>
-												<th>Receive account</th>
-											</tr>
-											<tr>
-												<th><input type="text" name="payuser"></th>
-												<th><input type="text" name="payaccount"></th>
-												<th><input type="text" name="receiveuser"></th>
-												<th><input type="text" name="receiveaccount"></th>
-											</tr>
-										</table>		
-										<input type="submit" value="Submit"> 
-									-->
 							</form>
 
-							<form id="B" style="position: absolute; visibility:hidden" method="post">
+							<form action="UserPayInfoWay19.1.php" id="B" style="position: absolute; visibility:hidden" method="post" enctype="multipart/form-data">
 								<h5>Bank holder name: </h5><input type="text" name="payuser"><br>
-								<h5>Reference/ note: </h5><input type="text" name="payaccount"><br>
+								<h5>Reference/ note: </h5><input type="text" name="paynote"><br>
 								<h5>Please upload your bank receipt photo here: </h5><input type="file" name="image"/><br>
 								<input type="submit" value="Submit"> 
 							</form>

@@ -120,6 +120,7 @@
                 <th>COUNTRY</th>
                 <th>FLAVOR</th>
                 <th>HALAL/ NON-HALAL</th>
+                <th>PRODUCTION DATE</th>
                 <th>EXPIRY DATE</th>
                 <th>INFORMATION</th>
 				<th>IMAGE</th>
@@ -165,6 +166,7 @@ function confirmation()
             <td><?php echo $row["s_country"]?></td>
             <td><?php echo $row["s_flavor"]?></td>
             <td><?php echo $row["s_certification"]?></td>
+            <td><?php echo $row["s_production"]?></td>
             <td><?php echo $row["s_expiry"]?></td>
             <td><?php echo $row["s_info"]?></td>
             <td><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>';?></td>
