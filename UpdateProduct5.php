@@ -90,8 +90,43 @@
                             <option value="Thailand">Thailand </option>
                             <option value="Others">Others</option>
                         </select>
-
+    
     <br>
+
+            <p>Flavor: 
+                        <select name="product_flavor">
+                            <option value="<?php echo $row["s_flavor"]; ?>"><?php echo $row["s_flavor"]; ?></option>
+                            <option value="Sour">Sour</option>
+                            <option value="Sweet">Sweet</option>
+                            <option value="Bitter">Bitter</option>
+                            <option value="Hot">Spicy/ hot</option>
+                            <option value="Others">Others</option>
+                        </select>
+            </p>
+
+            <p>Halal/ Non Halal Certifications
+            <br>
+            <input type="radio" id="h" name="certification" value="Halal">
+            <label for="h">Halal</label><br>
+            <input type="radio" id="nh" name="certification" value="Non-Halal">
+            <label for="nh">Non-Halal</label>
+            </p>
+
+            <p>Production Date:
+            <input type="date" name="production_date" value="<?php echo $row["s_production"]; ?>">
+            </p>
+
+            <p>Expiry Date: 
+                        <select name="product_expiry">
+                            <option value="<?php echo $row["s_expiry"]; ?>"><?php echo $row["s_expiry"]; ?></option>
+                            <option value="0-3">0-3</option>
+                            <option value="3-6">3-6</option>
+                            <option value="6-12">6-12</option>
+                            <option value="12-18">12-18</option>
+                            <option value="More than 2 years">More than 2 years</option>
+                        </select>
+            </p>
+
             <label>More Information: </label>
             <textarea name="product_info" rows="4" cols="50"><?php echo $row["s_info"]; ?></textarea>
 

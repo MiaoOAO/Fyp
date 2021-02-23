@@ -117,9 +117,28 @@
 							<h5>RM <?php echo $row["s_price"]  ?></h5>
 
 							<form class="ADD-product" method="post" action="" enctype="multipart/form-data">
-								<p>Quantity<br><input type="text" name="user_qty" placeholder=""></p>
+								<p>Quantity<br><input type="text" name="user_qty" id="user_qty" placeholder="" value="0"> <button type="button" id="minus" class="btn btn-danger btn-number" onclick="decrease()">-</button>  <button type="button" id="plus" class="btn btn-success btn-number" onclick="increase()" style="float:right; background-color:green;">+</button> </p>
 								<p><input type="submit" name="orderbtn" value="ADD TO CART">
 							</form>
+							
+							<script>
+								var textBox = document.getElementById("user_qty");
+
+								function increase(){
+									var a = 1;							
+									textBox.value++;
+								}    
+
+
+								function decrease(){
+									if(textBox.value <= 0)
+									alert("Quantity cannot be negative!");
+									
+									else
+									textBox.value--;
+								}    
+								
+								</script>
 						</div>
 					</div>		
 				</div>
@@ -183,7 +202,11 @@
 
 		$balance = $row["s_quantity"] - $cqty; //$balance = total product qty in stock - user enter qty 
 
-
+		if($cqty <= 0)
+		{
+			alert("Product quantity cannot be zero or null!");
+		}
+		
 		if($balance >= 0) // True, if product stocks enough
 		{
 			$conn->query("INSERT INTO usercart (product_id, user_id, qty) VALUES ('$pid', '$userid', '$cqty')");

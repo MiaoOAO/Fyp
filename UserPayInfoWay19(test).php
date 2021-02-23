@@ -93,8 +93,8 @@
 
 				$payWay = "credit";
 				$payUser = $_POST['payuser'];
-				$payAccount = $_POST['payaccount'];
-				$receiveUser = $_POST['receiveuser'];
+				$cardNum = $_POST['cardnumber'];
+				$cardDate = $_POST['carddate'];
 				$securityCode = $_POST['securityCode'];
 				$payStatus = false;
 
@@ -104,7 +104,7 @@
 				$result = array_slice($numbers,0,$num); 
 				$pay_random = $result[0];
 
-				if($payUser == "" ||$payAccount == "" || $receiveUser == "" || $securityCode == "")
+				if($payUser == "" ||$cardDate == "" || $cardNum == "" || $securityCode == "")
 				{
 					echo "<p>You must fill the blanks.</p>";
 				}
@@ -114,7 +114,7 @@
 				//	$sql = "INSERT INTO payment_info (pay_user, receive_user, pay_account, receive_account, pay_way, pay_status, pay_random)
 				//	VALUES ('".$payUser."', '".$receiveUser."', ".$payAccount.",".$receiveAccount.",'".$payWay."','".$payStatus."',".$pay_random.");";
 				//$conn->query("INSERT INTO payment_info (pay_user, receive_user, pay_account, receive_account, pay_way, pay_status, pay_random) VALUES ('$payUser', '$receiveUser', $payAccount, $receiveAccount, '$payWay', '$payStatus', $pay_random)");
-				$sql = "INSERT INTO payment_info (pay_user, receive_user, pay_account, security_code, pay_way, pay_status, pay_random) VALUES ('$payUser', '$receiveUser', $payAccount, $securityCode, '$payWay', '$payStatus', $pay_random)";
+				$sql = "INSERT INTO payment_info (pay_user, card_num, card_date, security_code, pay_way, pay_status, pay_random) VALUES ('$payUser', '$cardNum', '$cardDate', $securityCode, '$payWay', '$payStatus', $pay_random)";
 				$resultInfo = mysqli_query($conn, $sql);
 
 					if($resultInfo == 1)

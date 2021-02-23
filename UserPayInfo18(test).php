@@ -128,7 +128,7 @@
 			padding-top:2rem;
 			background-color: rgb(250, 219, 216);
 			width:100%;
-			height:600px;
+			height:700px;
 		
 		
 		}
@@ -361,16 +361,16 @@
 						<h2>Select Payment method</h2>
 							
 							<div class="payway">
-								<input type="radio" name="payway" value="credit" onClick="hideB()" checked>Credit/ Debit card
-								<input type="radio" name="payway" value="bank" onClick="hideA()">Bank Receipt
+								<label><input type="radio" name="payway" value="credit" onClick="hideB()" checked><img src="https://icons-for-free.com/iconfiles/png/512/card+credit+card+debit+card+master+card+icon-1320184902079563557.png" width=200px; height=150px></label>
+								<label><input type="radio" name="payway" value="bank" onClick="hideA()"><img src="https://cdn.iconscout.com/icon/free/png-512/payment-receipt-1499500-1269602.png" width=200px; height=150px></label>
 							</div>
 
 							<form action="UserPayInfoWay19(test).php" method="post" id="A" style="position: absolute">
 
 								<h5>Name on card</h5><input type="text" name="payuser"><br>
-								<h5>Card Number</h5><input type="text" name="payaccount"><br>
-								<h5>Expiry Date</h5><input type="text" name="receiveuser"><br>
+								<h5>Card Number</h5><input type="text" name="cardnumber"><br>
 								<h5>Card Security Code</h5><input type="text" name="securityCode"><br>
+								<h5>Expiry Date</h5><input type="month" name="carddate"><br>
 								<input type="submit" value="Submit"> 
 							</form>
 

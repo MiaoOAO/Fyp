@@ -171,7 +171,7 @@
                                     <li>Candy</li>
                                 </ul>
                             </h3>
-                            <a href="/products.html"><button type="button" class="btn btn-secondary button"><span> More
+                            <a href="products.php"><button type="button" class="btn btn-secondary button"><span> More
                                         Products
                                     </span></button></a>
                         </div>
