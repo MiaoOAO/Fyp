@@ -111,6 +111,7 @@
 							<div class="info">
 								<p><?php echo "Product Flavor : " . $row["s_flavor"] ?></p>
 								<p><?php echo "Halal Certification : " . $row["s_certification"] ?></p>
+								<p></p><?php echo "Production Date : " . $row["s_production"] ?></p>
 								<p><?php echo "Expiry Period : " . $row["s_expiry"] . " Months" ?></p>
 								<p><?php echo "Product Description : " . $row["s_info"] ?></p>
 							</div>
