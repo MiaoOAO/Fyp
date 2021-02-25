@@ -145,8 +145,8 @@
         .contact p {
 
             font-size: 2rem;
-          color: var(--title-dark);
-          font-family: var(--Libre);
+            color: var(--title-dark);
+            font-family: var(--Libre);
         }
 
         .contact button {
@@ -188,7 +188,6 @@
         }
 
         .ctn .btn:hover{
-            background-color: ;
             font-weight: bold;
             border: 1px solid red;
             font-style: italic;   
@@ -592,7 +591,35 @@
             padding: 6px 20px;
             border-radius: 4px;
             border-radius: 21px;
-            width:100%;
+            width:71%;
+        }
+        .ADD-product{
+            margin-top: 2rem;
+        }
+
+        
+        .card-product-recommend {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 13%;
+            margin-right: 13%;
+            text-align: center;
+            float: right;
+        }
+
+        .card-product-recommend.ctn {
+            padding: 1%;
+            float: right;
+        }
+
+        .card-product-recommend.ctn .btn {
+            padding: 2%;
+            flex-grow: 1;
+            flex-basis: 16%;
+            width: 250px;
+        
+            border: 1px solid black;
+            border-radius: 10px 10px;
         }
 
 /**about**/

@@ -139,17 +139,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>Best Sellers</h2>
+                    <h2>Recommend</h2>
+                    <br>
                         <div class="box-one">
-                            <img src="assets/7.jpg">
+                            <img src="assets/product/Crab_Chips_KOREAN.jpg">
                             <h3>TOP 1</h3>
                         </div>
                         <div class="box-two">
-                            <img src="assets/5.jpg" >
+                            <img src="assets/product/Lay'sBBQ_MALAYSIA.jpg" >
                             <h3>TOP 2</h3>
                         </div>
                         <div class="box-three">
-                            <img src="assets/6.jpg" >
+                            <img src="assets/product/muji_chocolate_strawberries_japan.jpg" >
                             <h3>TOP 3</h3>
                         
                     </div>

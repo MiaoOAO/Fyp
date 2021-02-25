@@ -2,7 +2,7 @@
         <div class="container text-center text-md-left">
             <div class="row col-md-12">
                 <div class="col-md-4 mx-auto">
-                    <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Logo(name)</h3>
+                    <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Fun_Snacks</h3>
                     <p>We are provide a variety of snacks and drinks from different countries for you to buy.<br><br>
                     MALAYSIA</p>
                 </div>
@@ -45,7 +45,7 @@
                     </h6>
                     <h6><i class="fas fa-phone"></i> : 03-1234 5566/012-411 9219</h6>
                     <h6><i class="far fa-envelope"></i> : <a
-                            href="mailto:josephsim0501@gmail.com">wearefunsnacks@gmail.com</a></h6><br>
+                            href="mailto:wearefunsnacks@gmail.com">wearefunsnacks@gmail.com</a></h6><br>
                     <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Business Hours</h3>
                     <h6> Monday - Friday : 10.00a.m. - 6.00p.m.<br>
                         Saturday : 10.00a.m. - 4.00p.m.<br>
@@ -59,22 +59,17 @@
         <div class="social-btn">
             <ul class="list-unstyled list-inline text-center">
                 <li class="list-inline-item">
-                    <a href="#">
+                    <a href="https://www.facebook.com/FunSnack-116986147094140/?ref=page_internal">
                         <img src="https://img.icons8.com/cotton/64/000000/facebook.png" />
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">
-                        <img src="https://img.icons8.com/cotton/64/000000/twitter.png" />
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">
+                    <a href="https://www.instagram.com/wearefunsnacks/">
                         <img src="https://img.icons8.com/cotton/64/000000/instagram-new.png" />
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">
+                    <a href="mailto:wearefunsnacks@gmail.com">
                         <img src="https://img.icons8.com/doodle/48/000000/gmail.png" />
                     </a>
                 </li>

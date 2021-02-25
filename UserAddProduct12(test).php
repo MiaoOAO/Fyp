@@ -117,7 +117,7 @@
 							<h5>RM <?php echo $row["s_price"]  ?></h5>
 
 							<form class="ADD-product" method="post" action="" enctype="multipart/form-data">
-								<p>Quantity<br><input type="text" name="user_qty" id="user_qty" placeholder="" value="0"> <button type="button" id="minus" class="btn btn-danger btn-number" onclick="decrease()">-</button>  <button type="button" id="plus" class="btn btn-success btn-number" onclick="increase()" style="float:right; background-color:green;">+</button> </p>
+								<p>Quantity<br><button type="button" id="minus" class="btn btn-danger btn-number" onclick="decrease()"style="margin-top:0px;">-</button> <input type="text" name="user_qty" id="user_qty" placeholder="" value="0">  <button type="button" id="plus" class="btn btn-success btn-number" onclick="increase()" style="float:right; background-color:green;margin-top:0px;">+</button> </p>
 								<p><input type="submit" name="orderbtn" value="ADD TO CART">
 							</form>
 							
@@ -146,7 +146,7 @@
 		</div>
 		<div class="container comment"> 
 			<div class="row col-md-12 text-center">
-				<div class="col-md-6">
+				<div class="col-md-8">
 					<div id="commentBox" style="height:auto; border:1px solid black; margin:20px">
 						<br><h2>Comment</h2>
 
@@ -183,7 +183,58 @@
 						<br><br>
 					</div>
 				</div>	
-				<div class="col-md-6">
+				<div class="col-md-4 center">
+					<div class ="card-product-recommend">
+						<?php  
+						/*
+							if(isset($_POST["search"]))
+							{
+								$s = $_SESSION["search"];
+								$res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
+							}
+
+							else if(isset($_POST["show"]))
+							{
+								$res = mysqli_query($conn,"select * from productlist");
+							}
+
+							else
+							{
+								$res = mysqli_query($conn,"select * from productlist");
+							}
+						*/
+						
+						$s = $_SESSION["search"];
+						$res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
+
+							while($row=mysqli_fetch_array($res))
+							{
+								$p_id = $row["id"];
+								?>	
+						
+								<div class="ctn">               <?php //这行是给格子的用法 ?>
+								<a href='UserAddProduct12(test).php?pid=<?php echo $p_id;?>'>
+									<button type="button" class="btn" onclick="/* href='UserProductDetail.php?pid=<?php echo $p_id;?>'*/ ">
+										<div class="product-image text-center">
+											<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>';?>
+										</div>
+										<div class="product-info">
+											<h5><?php echo $row["s_name"]?></h5>
+											<h6>RM<?php echo $row["s_price"]?></h6>
+										</div>
+									</button> 
+								</a>
+								</div>		
+								<?php
+							} 
+
+							if($p_id == NULL)
+							{
+								echo "SORRY, PRODUCT CANNOT FOUND!";
+							}
+						
+						?>
+    				</div>
 
 				</div>
 			</div>
