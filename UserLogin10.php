@@ -37,6 +37,7 @@ session_start(); ?>
         .login h1{
             text-align: center;
             color:var(--title-red);
+            margin-bottom:20px;
         }    
 
         
@@ -53,12 +54,18 @@ session_start(); ?>
 
         label{
             color:var(--title-dark);
+             font-size: 20px;
         }
 
         #textHelp{
             color:var(--title-red) !important;
+            font-size: 15px;
         }
 
+        .link p{
+            text-align: center;
+            font-size: 20px;
+        }
     </style>
 
     <title>Login in to User Page</title>
@@ -73,9 +80,9 @@ session_start(); ?>
 
     <!-- icon bar-->
     <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/FunSnack-116986147094140/?ref=page_internal" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="mailto:wearefunsnacks@gmail.com" target="_blank" class="youtube"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/wearefunsnacks/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
     </div>
 
     <!-- up button-->
@@ -111,7 +118,9 @@ session_start(); ?>
 
                         <input type="submit" class = "button" name="submit" value="Login">
 
-                        <label >New member? <a href="UserRegister9.php">REGISTER NOW</a> here.</label>
+                        <div class="link">
+                            <p>New member? <a href="UserRegister9.php">Create an account</a>.</p>
+                        </div>
                     </form>
                 </div>
             </div>

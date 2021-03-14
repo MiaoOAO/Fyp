@@ -29,11 +29,14 @@
 		    border-radius: 4px;
 		    width: 100%;
             border-radius: 21px;
+            margin-bottom:15px;
         }
 
         .register h1{
             text-align: center;
             color:var(--title-red);
+            margin-bottom:20px;
+            
         }
 
         .register:hover{
@@ -49,6 +52,14 @@
 
         label{
             color:var(--title-dark);
+            font-size: 20px;
+        }
+
+        .link{
+            text-align: center;
+        }
+        .invalid-feedback{
+            font-size: 15px;
         }
 
     </style>
@@ -60,11 +71,11 @@
         <img src="./assets/9.jpg" alt="">
     </div>  
 
-    <!-- icon bar-->
+   <!-- icon bar-->
     <div class="icon-bar">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/FunSnack-116986147094140/?ref=page_internal" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="mailto:wearefunsnacks@gmail.com" target="_blank" class="youtube"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.instagram.com/wearefunsnacks/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
     </div>
 
     <!-- up button-->
@@ -92,26 +103,26 @@
 
             <form action="UserRegister9.php" method="post">
                     <div class="form-group">
-                        <label >User name</label>
-                        <input type="text" name="user_username" class="form-control"  placeholder="user name" required>
+                        <label >Username</label>
+                        <input type="text" name="user_username" class="form-control"  placeholder="Enter a user name..." required>
                     </div>
 
                     <div class="form-group">
                         <label >Password</label>
-                        <input type="password" name="user_password" class="form-control"  placeholder="password"  required>
+                        <input type="password" name="user_password" class="form-control"  placeholder="Enter your password..."  required>
                     </div>
                     <div class="form-group">
                         <label >Confirm Password</label>
-                        <input type="password" name="user_cfm_password" class="form-control"  placeholder="same password"  required>
+                        <input type="password" name="user_cfm_password" class="form-control"  placeholder="Enter your password again..."  required>
                     </div>
 
                     <div class="form-group">
-                        <label >Email</label>
-                        <input type="email" name="user_email" class="form-control" placeholder="personal email"  required>
+                        <label >Email address</label>
+                        <input type="email" name="user_email" class="form-control" placeholder="Enter your email address..."  required>
                     </div>
 
                     <div class="form-group">
-                        <label > Contact number</label>
+                        <label > Contact Number</label>
                         <input type="tel" name="user_phone" class="form-control"  pattern="^(\+?6?01)[0-46-9]-*[0-9]{7,8}$" placeholder="eg:0123456789"  required>
                     </div>
 
@@ -128,6 +139,9 @@
                         </div>
                     </div>
                 <input type="submit" name="submit" value="CONFIRM">
+                    <div class="link">
+                        <label >Already have an account ? <a href="UserLogin10.php">Sign in</a>.</label>
+                    </div>
             </form>
         </div>
     </div>      

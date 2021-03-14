@@ -59,17 +59,17 @@
         <div class="social-btn">
             <ul class="list-unstyled list-inline text-center">
                 <li class="list-inline-item">
-                    <a href="https://www.facebook.com/FunSnack-116986147094140/?ref=page_internal">
+                    <a href="https://www.facebook.com/FunSnack-116986147094140/?ref=page_internal" target="_blank">
                         <img src="https://img.icons8.com/cotton/64/000000/facebook.png" />
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://www.instagram.com/wearefunsnacks/">
+                    <a href="https://www.instagram.com/wearefunsnacks/" target="_blank">
                         <img src="https://img.icons8.com/cotton/64/000000/instagram-new.png" />
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="mailto:wearefunsnacks@gmail.com">
+                    <a href="mailto:wearefunsnacks@gmail.com" target="_blank">
                         <img src="https://img.icons8.com/doodle/48/000000/gmail.png" />
                     </a>
                 </li>
