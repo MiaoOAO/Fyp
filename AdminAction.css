@@ -63,3 +63,11 @@ div.content {
         float: none;
     }
 }
+
+.title-map{
+    margin-left: 250px;
+}
+
+.location{
+    margin-left: 100px;
+}

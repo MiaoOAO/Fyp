@@ -5,7 +5,7 @@
 	if(isset( $_SESSION [ 'aname' ]) && ! empty ( $_SESSION [ 'aname' ])) 
 	{
     ?> 
-    <div style="background-color: rgba(201, 76, 76, 0.3); border:3px solid black; font-size:30px; padding:10px">
+    <div style="background-color: rgba(201, 76, 76, 0.3); border:3px solid black; font-size:30px;text-align: center; padding:10px; position:fixed;width:100%; z-index:999">
       <?php
         echo  "Welcome, " . $_SESSION [ 'aname' ];
       ?>
@@ -62,6 +62,10 @@
     <title>ADD PRODUCT</title>
     <link rel="stylesheet" href="AddProduct.css">
 
+    <!--Bootstrap CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="sidebar">
@@ -74,75 +78,92 @@
     <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
 </div>
 <br>
-<div class="center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12"> <br><br><br><br>
+                <div class="center">
+               
+                <form name="" method="post" enctype="multipart/form-data" action="">
 
-<form name="" method="post" enctype="multipart/form-data" action="">
+                    <p>ID: <input type="text" name="product_id"></p>
 
-    <p>ID: <input type="text" name="product_id"></p>
+                    <p>Name: <input type="text" name="product_name"></p>
 
-    <p>Name: <input type="text" name="product_name"></p>
+                    <p>Price: <input type="number" name="product_price" step="any"></p>
 
-    <p>Price: <input type="number" name="product_price" step="any"></p>
+                    <p>Quantity: <input type="number" name="product_quantity"/></p>
 
-    <p>Quantity: <input type="number" name="product_quantity"/></p>
+                    <p>Country: 
+                                <select name="product_country">
+                                    <option value="Malaysia">Malaysia </option>
+                                    <option value="Japan">Japan </option>
+                                    <option value="China">China </option>
+                                    <option value="Indonesia">Indonesia </option>
+                                    <option value="Thailand">Thailand </option>
+                                    <option value="Others">Others</option>
+                                </select>
+                    </p>
 
-    <p>Country: 
-                <select name="product_country">
-                    <option value="Malaysia">Malaysia </option>
-                    <option value="Japan">Japan </option>
-                    <option value="China">China </option>
-                    <option value="Indonesia">Indonesia </option>
-                    <option value="Thailand">Thailand </option>
-                    <option value="Others">Others</option>
-                </select>
-    </p>
+                    <p>Flavor: 
+                                <select name="product_flavor">
+                                    <option value="Sour">Sour</option>
+                                    <option value="Sweet">Sweet</option>
+                                    <option value="Bitter">Bitter</option>
+                                    <option value="Hot">Spicy/ hot</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                    </p>
 
-    <p>Flavor: 
-                <select name="product_flavor">
-                    <option value="Sour">Sour</option>
-                    <option value="Sweet">Sweet</option>
-                    <option value="Bitter">Bitter</option>
-                    <option value="Hot">Spicy/ hot</option>
-                    <option value="Others">Others</option>
-                </select>
-    </p>
+                    <p>Halal/ Non Halal Certifications
+                    <br>
+                    <input type="radio" id="h" name="certification" value="Halal">
+                    <label for="h">Halal</label><br>
+                    <input type="radio" id="nh" name="certification" value="Non-Halal">
+                    <label for="nh">Non-Halal</label>
+                    </p>
 
-    <p>Halal/ Non Halal Certifications
-    <br>
-    <input type="radio" id="h" name="certification" value="Halal">
-    <label for="h">Halal</label><br>
-    <input type="radio" id="nh" name="certification" value="Non-Halal">
-    <label for="nh">Non-Halal</label>
-    </p>
+                    <p>Production Date:
+                    <input type="date" name="production_date">
+                    </p>
 
-    <p>Production Date:
-    <input type="date" name="production_date">
-    </p>
-
-    <p>Expiry Date: 
-                <select name="product_expiry">
-                    <option value="0-3">0-3</option>
-                    <option value="3-6">3-6</option>
-                    <option value="6-12">6-12</option>
-                    <option value="12-18">12-18</option>
-                    <option value="More than 2 years">More than 2 years</option>
-                </select>
-    </p>
+                    <p>Expiry Date: 
+                                <select name="product_expiry">
+                                    <option value="0-3">0-3</option>
+                                    <option value="3-6">3-6</option>
+                                    <option value="6-12">6-12</option>
+                                    <option value="12-18">12-18</option>
+                                    <option value="More than 2 years">More than 2 years</option>
+                                </select>
+                    </p>
 
 
-    <p>More Information: 
-    <br>
-        <textarea name="product_info" rows="4" cols="50"></textarea>
-    </p>
+                    <p>More Information: 
+                    <br>
+                        <textarea name="product_info" rows="4" cols="50"></textarea>
+                    </p>
 
-    <p> Select image to upload:<input type="file" name="image"/></p>
+                    <p> Select image to upload:<input type="file" name="image"/></p>
 
-    <input type="submit" name="submit" value="ADD PRODUCT"/>
-</form>
-</div>
+                    <input type="submit" name="submit" value="ADD PRODUCT"/>
+                </form>
+            </div>
+              <br><br><br>         
+            </div>              
+        </div>
+    </div> 
 </body>
 
 </html>
+<!--Bootstrap CDN-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
 
 
 <?php
