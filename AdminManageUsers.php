@@ -77,20 +77,15 @@
   
 	<table align="center" table border="1" width="750px">
 
-			<tr>
-      <th>PRODUCT ID</th>
-				<th>PRODUCT NAME</th>							
-				<th>PRICE</th>
-				<th>QUANTITY</th>
-        <th>COUNTRY</th>
-        <th>FLAVOR</th>
-        <th>HALAL/ NON-HALAL</th>
-        <th>PRODUCTION DATE</th>
-        <th>EXPIRY DATE</th>
-        <th>INFORMATION</th>
-				<th>IMAGE</th>
-        <th colspan="2">Action</th>
-			</tr>
+	<tr>
+        <th>USER ID</th>
+        <th>USER NAME</th>							
+        <th>PASSWORD</th>
+        <th>EMAIL</th>
+        <th>CONTACT NUMBER</th>
+        <th>REGISTER DATE</th>
+        <th>Action</th>
+	</tr>
 </div>
 </body>
 
@@ -117,7 +112,7 @@ function confirmation()
 
    include("DataConnection1.php"); 
 
-   $res = mysqli_query($conn,"select * from productlist");
+   $res = mysqli_query($conn,"select * from user");
    
    while($row = mysqli_fetch_array($res))
    {
@@ -125,21 +120,15 @@ function confirmation()
                                         <?php //这行是给row column list的用法 ?>
                                         <tr>                        
             <td><?php echo $row["id"]?></td>
-            <td><?php echo $row["s_name"]?></td>
-            <td><?php echo $row["s_price"]?></td>
-            <td><?php echo $row["s_quantity"]?></td>
-            <td><?php echo $row["s_country"]?></td>
-            <td><?php echo $row["s_flavor"]?></td>
-            <td><?php echo $row["s_certification"]?></td>
-            <td><?php echo $row["s_production"]?></td>
-            <td><?php echo $row["s_expiry"]?></td>
-            <td><?php echo $row["s_info"]?></td>
-            <td><?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>';?></td>
+            <td><?php echo $row["username"]?></td>
+            <td><?php echo $row["password"]?></td>
+            <td><?php echo $row["email"]?></td>
+            <td><?php echo $row["phone"]?></td>
+            <td><?php echo $row["register_time"]?></td>
+       
+            <?php $getID = $row["id"]; ?>
 
-            <?php $getID = $row["s_id"]; ?>
-
-            <td><a href="UpdateProduct5.php?mid=<?php echo $getID ?> ">Edit / Update</a></td>
-            <td><a href="ProductDetails3.php?mid=<?php echo $getID ?>" onclick="return confirmation();">Delete</a></td>
+            <td><a href="AdminManageUsers.php?mid=<?php echo $getID ?>" onclick="return confirmation();">Delete</a></td>
         </tr>
 	<?php
    } 
@@ -154,8 +143,8 @@ if (isset($_GET["mid"]))
 {
 	$delete = $_GET["mid"];
 
-	mysqli_query($conn, "DELETE from productlist where s_id = '$delete' ");
-	header("location:ProductDetails3.php");
+	mysqli_query($conn, "DELETE from user where id = '$delete' ");
+	header("location:AdminManageUsers.php");
 }
 
 ?>

@@ -71,6 +71,7 @@
     <a href="AddProduct2.php">INSERT NEW PRODUCT</a>
     <a href="ProductDetails3.php">PRODUCTS LIST</a>
     <a href="FunctionAdminSearchbarForm.php">SEARCH PRODUCTS BY NAME</a>
+    <a href="AdminManageUsers.php">MANAGE USERS ACCOUNT</a> 
     <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
     </div>
 
