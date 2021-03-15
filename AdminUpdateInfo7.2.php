@@ -71,6 +71,7 @@
   <a href="AdminManageUsers.php">MANAGE USERS ACCOUNT</a> 
   <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
 </div>
+<br>
 <div class="center">
 		<h2>Update Admin Profile</h2>
 		<form name="" method="post" enctype="multipart/form-data" action="">

@@ -74,7 +74,7 @@
   <a href="AdminUpdateInfo7.2.php">UPDATE PROFILE</a>
 </div>
 	<div class="table ">
-  
+  <br>
 	<table align="center" table border="1" width="750px">
 
 	<tr>
