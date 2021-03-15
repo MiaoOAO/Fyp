@@ -137,13 +137,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="assets/8.jpg" class="d-block w-100" alt="...">
+                                        <img src="assets/features-chocolate.jpg" class="d-block w-100" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/9.jpg" class="d-block w-100" alt="...">
+                                        <img src="assets/features-drink.jpg" class="d-block w-100" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="assets/8.jpg" class="d-block w-100" alt="...">
+                                        <img src="assets/features-potato.jpg" class="d-block w-100" alt="...">
                                     </div>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
@@ -163,13 +163,23 @@
                                     HONG KONG,
                                     , etc.,</span></h3>
                             <h3>
-                                <ul><p><u>TYPE</u></P>
+                                <ul><p><u>Type of Snacks</u></P>
                                     <li>Potato chips</li>
                                     <li>Popcorn</li>
-                                    <li>Soft drink</li>
                                     <li>Cookie</li>
                                     <li>Candy</li>
+                                    <li>Chocolate</li>
+                                    <li>Candy</li>
                                 </ul>
+                        
+                                <ul><p><u>Type of Drinks</u></P>
+                                    <li>Soft drink</li>
+                                    <li>Yoghurt</li>
+                                    <li>Juice</li>
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                </ul>
+                            
                             </h3>
                             <a href="products.php"><button type="button" class="btn btn-secondary button"><span> More
                                         Products
@@ -185,41 +195,41 @@
 
             <div class="container">
                 <section class="card" data-aos="fade-left">
-                    <img src="./assets/5.jpg " alt="">
+                    <img src="./assets/delivery.gif " alt="">
                     <div>
                         <h3>Delivery Services</h3>
                         <p>
                         You do not need to worry about issues such as driving to the supermarket, this is because our website has provided delivery service for your.
                         </p>
-                        <a href="#" class="btn">Shop Now</a>
+                        <a href="products.php" class="btn">Shop Now</a>
                     </div>
                 </section>
 
                 <section class="card" data-aos="fade-right">
-                    <img src="./assets/0.jpg" alt="">
+                    <img src="./assets/main-2-snacks.jpg" alt="">
                     <div>
                         <h3>About Us</h3>
                         <p>
                         The online procurement service platform, collector variety of snacks and drinks from different countries for your to buy.
                         </p>
-                        <a href="#" class="btn">More Info</a>
+                        <a href="about-us.php" class="btn">More Info</a>
                     </div>
                 </section>
 
                 <section class="card" data-aos="fade-left">
-                    <img src="./assets/2.jpg" alt="">
+                    <img src="./assets/customer_service.gif" alt="">
                     <div>
                         <h3>Contact Us</h3>
                         <p>
                             We provide 24/7 online help to answer your questions and technical assistance. Please feel free to contact us if you have any questions.
                         </p>
-                        <a href="#" class="btn">Contact Now</a>
+                        <a href="contact_us.php" class="btn">Contact Now</a>
                     </div>
                 </section>
             </div>
             <br><br><br><br><br>
 
-            <section id="brands">
+            <!-- <section id="brands">
                 <div class="container text-center">
                     <div class="col-md-12 text-center">
 
@@ -227,16 +237,12 @@
                     </div>
                     <div class="card-two">
                         <div class="logo">
-                            <img src="/assets/logo-dupont.png" alt="">
-                            <img src="/assets/logo-mercury.jpg" alt="">
-                            <img src="/assets/logo-glasurit.gif" alt="">
-                            <img src="/assets/logo-3m.png" alt="">
-                            <img src="/assets/logo-alps.jpg" alt="">
+                         
                         </div>
 
                     </div>
                 </div>
-            </section>
+            </section> -->
 
 
         </Main>

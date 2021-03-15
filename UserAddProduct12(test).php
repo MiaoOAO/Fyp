@@ -41,6 +41,7 @@
 
 		.comment {
 			background-color: rgb(33, 47, 60 ,0.1);
+			margin-bottom:20px;
 		}
 
 		#commentBox h2{
@@ -61,12 +62,20 @@
 			width:50%;
 			margin-top:5px;
 		}
+		.adv h2{
+			float:right;
+			text-align: center;
+            color: orangered;
+            text-shadow: 2px 2px 4px #000000;
+            font-family: var(--abril);
+            font-size:2.3rem;
+		}
 
     </style>
 
 	</head>
 
-	
+	 <title>PRODUCT DETAILS</title>
     <!-- background image -->
     <div class="bg-image">
         <img src="./assets/9.jpg" alt="">
@@ -186,33 +195,20 @@
 				</div>	
 				<div class="col-md-4 center">
 					<div class ="card-product-recommend">
+						<div class="adv">
+							<h2>Other Products</h2>	
+						</div>	
 						<?php  
-						/*
-							if(isset($_POST["search"]))
-							{
-								$s = $_SESSION["search"];
-								$res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
-							}
-
-							else if(isset($_POST["show"]))
-							{
-								$res = mysqli_query($conn,"select * from productlist");
-							}
-
-							else
-							{
-								$res = mysqli_query($conn,"select * from productlist");
-							}
-						*/
+						
 						
 						$s = $_SESSION["search"];
 						$res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
-
-							while($row=mysqli_fetch_array($res))
+						$row = 0;	
+							while(($row=mysqli_fetch_array($res)) && ($times<3))
 							{
-								$p_id = $row["id"];
+								$p_id = $row["id"];$times++;
 								?>	
-						
+								
 								<div class="ctn">               <?php //这行是给格子的用法 ?>
 								<a href='UserAddProduct12(test).php?pid=<?php echo $p_id;?>'>
 									<button type="button" class="btn" onclick="/* href='UserProductDetail.php?pid=<?php echo $p_id;?>'*/ ">

@@ -88,7 +88,8 @@
 		}
 
 		.container{
-			margin-top:6rem;
+			margin-top:7rem;
+			position: static;
 		}
 
 		.cart-detail h1{
@@ -178,6 +179,22 @@
 			margin-top:1rem;
 		}
 
+		.total-price{
+			margin:10px;
+			font-size:1.5rem;
+			border:3px red solid;
+			background-color:white;
+			font-family:var(--Libre);
+			padding:10px;
+		}
+
+		.adv{
+			position: relative;
+			float:right;
+			text-align: center;
+			
+		}
+
 
 		</style>
 
@@ -200,7 +217,7 @@
 
 </head>
 
-
+	<title>PAYMENT</title>
 	<!-- background image -->
     <div class="bg-image">
         <img src="./assets/9.jpg" alt="">
@@ -229,7 +246,7 @@
 		<div class="container cart-detail"> 
             <div class="row col-md-12 ">
 				<h1>Total money here, please fill your payment information.</h1>
-			
+				<div class="col-md-8">
 				<?php
 		/*			if(isset($_COOKIE['pay_way']))            记得把这些comment回复，需要用到
 					{
@@ -297,21 +314,21 @@
 							//echo $p_info;
 							//setcookie('p_info',$p_info);
 						?>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>	
-							<td>
-								<?php
-									echo "".$totalItem."   Items. ";
-									echo "Totol prize: ".$totalPrice." MYR";
-								?>
-							</td>
-						</tr>
 						</table>
-						<?php
+					<?php
 					}
 					?>
+					</div>
+					<div class="col-md-4">
+							<div class="total-price">	
+								<?php
+									echo "".$totalItem."   Items. ";
+									echo "Totol prize: RM ".$totalPrice." ";
+								?>
+							</div>
+					</div>
+						
+					
 			</div>
 		</div>
 
@@ -354,9 +371,13 @@
 			</div>
 		</div>
 
-		<div class="container pay-method"> 
+		<div class="container pay-method">
+				<div class="adv">
+					<h2>Pomotions Products</h2>
+					<img src="./assets/promote.png" alt="">
+				</div> 
             <div class="row">				
-				<div class="col-md-12 ">
+				<div class="col-md-12">
 					<div class="col-md-8">
 						<h2>Select Payment method</h2>
 							
@@ -386,6 +407,7 @@
 					</div>
 
 					
+				
 				</div>
 			</div>
 		</div>

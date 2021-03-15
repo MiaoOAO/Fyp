@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./css/allPages-style.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- 
+    <title>CONTACT US</title>
 
     <style>
 

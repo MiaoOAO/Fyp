@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/contactus.css">
 
+     <title>ABOUT US</title>
     <style>
         .carousel-item img{
             height:80vh;

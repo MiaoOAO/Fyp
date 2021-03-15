@@ -56,7 +56,7 @@
 
 	<style>
 		.order-record{
-			margin: 100px auto;
+			margin: 200px auto;
 			
 		}
 

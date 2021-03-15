@@ -2,9 +2,10 @@
         <div class="container text-center text-md-left">
             <div class="row col-md-12">
                 <div class="col-md-4 mx-auto">
-                    <h3 class="font-weight-bold text-uppercase mt-3 mb-4">Fun_Snacks</h3>
+                    <a href="main.php"><h3 class="font-weight-bold text-uppercase mt-3 mb-4">Fun_Snacks</h3></a>
                     <p>We are provide a variety of snacks and drinks from different countries for you to buy.<br><br>
                     MALAYSIA</p>
+                    
                 </div>
                 <!--<hr class="clearfix w-100 d-md-none">-->
                 <div class="col-md-3 mx-auto">
@@ -14,7 +15,7 @@
                             <a href="features.php">FEATURES</a>
                         </li>
                         <li>
-                            <a href="products">PRODUCTS</a>
+                            <a href="products.php">PRODUCTS</a>
                         </li>
                         <li>
                             <a href="contact_us.php">CONTACT US</a>

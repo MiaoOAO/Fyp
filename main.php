@@ -51,7 +51,7 @@
         <a href="#"><img src="https://img.icons8.com/clouds/100/000000/up.png"></a>
     </div>
 
-
+     <title>MAIN</title>
 
 
 <!-- header -->
@@ -162,7 +162,7 @@
     </div>
 
 <section class="c ">
-    <img src="./assets/slide-4.jpg" style="width:100%; height:100%;">
+    <img src="./assets/slide-7.jpg" style="width:100%; height:100%;">
 </section>
 
 <section class="contact">

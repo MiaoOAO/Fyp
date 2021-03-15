@@ -31,7 +31,7 @@
 		<style>
 
 			.shop-cart{
-				margin:100px auto;
+				margin:150px auto;
 			}
 
 			.shop-cart h1{
@@ -74,6 +74,7 @@
 				border: 1px solid black;
 				margin: 1rem;	
 				background-color:var(--btn-red);;
+				font-size:1.5rem;
 			}
 
 			.one a,.two a{
@@ -94,10 +95,12 @@
 		
 			.total-price{
 				float: right;
+				font-size:1.5rem;
 			}
 			
 		</style>
 	</head>
+	 <title>CART VIEW</title>
 
 	<!-- background image -->
     <div class="bg-image">
