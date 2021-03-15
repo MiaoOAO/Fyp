@@ -203,21 +203,21 @@
 						
 						$s = $_SESSION["search"];
 						$res = mysqli_query($conn,"SELECT * FROM productlist WHERE s_name LIKE '%$s%';");
-						$row = 0;	
-							while(($row=mysqli_fetch_array($res)) && ($times<3))
+						$rowOther = 0;	
+							while(($rowOther=mysqli_fetch_array($res)) && ($times<3))
 							{
-								$p_id = $row["id"];$times++;
+								$p_id = $rowOther["id"];$times++;
 								?>	
 								
 								<div class="ctn">               <?php //这行是给格子的用法 ?>
 								<a href='UserAddProduct12(test).php?pid=<?php echo $p_id;?>'>
 									<button type="button" class="btn" onclick="/* href='UserProductDetail.php?pid=<?php echo $p_id;?>'*/ ">
 										<div class="product-image text-center">
-											<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row['image'] ).'" height="200" width="200"/>';?>
+											<?php echo '<img src="data:image/jpeg;base64,'.base64_encode($rowOther['image'] ).'" height="200" width="200"/>';?>
 										</div>
 										<div class="product-info">
-											<h5><?php echo $row["s_name"]?></h5>
-											<h6>RM<?php echo $row["s_price"]?></h6>
+											<h5><?php echo $rowOther["s_name"]?></h5>
+											<h6>RM<?php echo $rowOther["s_price"]?></h6>
 										</div>
 									</button> 
 								</a>
