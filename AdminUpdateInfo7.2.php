@@ -79,6 +79,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
+      <br><br><br>
         <div class="center">
             <h2>Update Admin Profile</h2>
             <form name="" method="post" enctype="multipart/form-data" action="">
